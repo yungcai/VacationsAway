@@ -1,0 +1,8 @@
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "sqlite"
+brew "python@3.9"
+brew "glib"
+brew "rbenv"
+brew "shared-mime-info"
