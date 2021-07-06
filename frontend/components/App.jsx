@@ -16,4 +16,6 @@ const App = () => (
   </div>
 );
 
+// CHANGED APP to app
+
 export default App;
