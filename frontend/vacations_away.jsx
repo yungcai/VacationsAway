@@ -12,7 +12,7 @@ prop passed in, inside the div with id 'root'.
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
-    const storetest = configureStore();
+    // const storetest = configureStore();
     // window.login = login;
     // window.logout = logout;
     // window.signup = signup;
