@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 {
+   color: blue;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+ }
+
+
+ .modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 182, 39, 0.637);
+    z-index: 5;
+  }
+ 
+  .modal-child {
+    color:pink;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+  }
+ 
+  .close-x {
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
