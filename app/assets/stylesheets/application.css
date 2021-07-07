@@ -39,8 +39,8 @@
     color:black;
     font-weight: 700;
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: 300px;
+    left: 500px;
     transform: translate(-50%, -50%);
   }
  
