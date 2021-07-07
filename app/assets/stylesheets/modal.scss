@@ -1,0 +1,30 @@
+
+
+
+ .modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: purple;
+    z-index: 10;
+  }
+ 
+  .modal-child {
+    background-color: silver;
+    color:green;
+    font-weight: 700;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+  }
+ 
+  .close-x {
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }

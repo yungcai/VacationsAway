@@ -5,10 +5,9 @@ import React from 'react';
 const Greeting = ({ currentUser, logout, openModal }) => {
 
   const sessionLinks = () => (
-    <nav className="login-signup">
-      <button onClick={() => openModal('login')}>Login</button>
-      &nbsp;or&nbsp;
-      <button onClick={() => openModal('signup')}>Signup</button>
+    <nav className="navbar-greeting">
+      <button onClick={() => openModal('login')} className="login-btn">LOG IN</button>
+      <button onClick={() => openModal('signup')} className="signup-btn">SIGN UP</button>
     </nav>
   );
   const personalGreeting = () => (

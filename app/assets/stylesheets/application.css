@@ -16,9 +16,13 @@
 
  h1 {
    color: blue;
-   font-family: 'Courier New', Courier, monospace;
+   font-family: "blippo", fantasy ;
+   font-weight: 400;
    text-align: center;
  }
+
+
+
 
 
  .modal-background {
@@ -27,12 +31,13 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 182, 39, 0.637);
+    background: rgba(0, 176, 182, 0.637);
     z-index: 5;
   }
  
   .modal-child {
-    color:pink;
+    color:black;
+    font-weight: 700;
     position: absolute;
     top: 250px;
     left: 250px;
