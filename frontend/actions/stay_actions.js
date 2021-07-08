@@ -44,13 +44,8 @@ export const updateStay = stay => dispatch => (
     .then(stay => dispatch(receiveStay(stay)))
 )
 
-export const updateStay = stay => dispatch => (
-    StayApiUtil.updateStay(stay)
-    .then(stay => dispatch(receiveStay(stay)))
-)
 
-
-export const removeStay = stayId => dispatch => (
+export const deleteStay = stayId => dispatch => (
     StayApiUtil.removeStay(stayId)
     .then(() => dispatch(removeStay(stayId)))
 )

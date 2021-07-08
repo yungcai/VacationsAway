@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { login, signup, logout } from './actions/session_actions'
 import Root from './components/root';
 import configureStore from './store/store';
-import {receiveCurrentUser} from './actions/session_actions'
+import {receiveCurrentUser} from './actions/session_actions';
+import { fetchStays } from './util/stays_api_util';
 
 /*
 Write an entry point file that renders the `Root` component, with a `store`
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     // window.login = login;
     // window.logout = logout;
     // window.signup = signup;
+    // const store = configureStore()
     // window.getState = store.getState;
     // window.dispatch = store.dispatch;
     // window.receiveCurrentUser = receiveCurrentUser;
