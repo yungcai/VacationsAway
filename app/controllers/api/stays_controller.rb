@@ -1,4 +1,4 @@
-class Api:StaysController < ApplicationController 
+class Api::StaysController < ApplicationController 
     before_action :require_logged_in, only: [:create]
 
     def index 
