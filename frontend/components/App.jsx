@@ -5,6 +5,7 @@ import SignupFormContainer from "./session_form/signup_form_container";
 import { Route } from "react-router";
 import { AuthRoute } from "../util/route_util";
 import Modal from "./modal/modal";
+import StaysIndexContainer from "./stays/stays_index_container";
 
 const App = () => (
   <div>
@@ -15,6 +16,7 @@ const App = () => (
     </header>
     <AuthRoute path="/login" component={LoginFormContainer} />
     <AuthRoute path="/signup" component={SignupFormContainer} />
+    <Route path='/stays' component={StaysIndexContainer}/>
   </div>
 );
 

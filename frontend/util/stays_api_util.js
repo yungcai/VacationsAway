@@ -1,8 +1,7 @@
 export const fetchStays = () => (
     $.ajax({
       method: "get",
-      url: "/api/stays",
-      data
+      url: "/api/stays"
     })
   );
   

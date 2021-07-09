@@ -10,7 +10,9 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.demo = this.demo.bind(this);
   }
+
 
   update(field) {
     return e => this.setState({
@@ -22,6 +24,14 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then(this.props.closeModal);
+  }
+
+  demo(e){
+    e.preventDefault();
+    const user = Object.assign({},
+      {username:'demoguest1', email:'demoguest@demoguest', password:'demoguest'}
+    );
+    this.props.processForm(user).then(this.props.closeModal)
   }
 
   renderErrors() {
@@ -36,14 +46,15 @@ class SessionForm extends React.Component {
     );
   }
 
+
   render() {
+
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
           Welcome to VacationsAway!
           <br/>
-          <div onClick={this.props.closeModal} className="close-x">X</div>
-          {this.renderErrors()}
+            {this.renderErrors()}
           <div>
             <br/>
             <label>Username:
@@ -70,6 +81,13 @@ class SessionForm extends React.Component {
             <input type="submit" value={this.props.formType} />
           </div>
         </form>
+        {
+          this.props.formType == 'login' ? (
+            <form>
+              <button onClick={this.demo}>DEMO LOGIN</button>
+            </form>
+          ) : null
+        }
       </div>
     );
   }
