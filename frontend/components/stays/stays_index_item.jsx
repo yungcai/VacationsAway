@@ -1,11 +1,13 @@
 import React from 'react';
+import stay_show_container from './stay_show_container';
+import { Link } from 'react-router-dom';
 
-const StaysIndexItem = props => (
+const StaysIndexItem = props => {
+  
+    return <div>
+        <Link to={`/stays/${props.stay.id}`}>THIS IS A ITEM</Link>
+        </div>
 
-    <div>
-        <button onClick={()=> props.deleteStay(props.stay.id)}>Delete</button>
-    </div>
-
-)
+}
 
 export default StaysIndexItem

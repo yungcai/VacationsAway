@@ -3,7 +3,7 @@ export const fetchStays = () => (
       method: "get",
       url: "/api/stays"
     })
-  );
+);
   
   export const fetchStay = (stayId) => (
     $.ajax({

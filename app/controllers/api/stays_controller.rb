@@ -10,7 +10,7 @@ class Api::StaysController < ApplicationController
     def create 
         @stay = Stay.new(stay_params)
         if @stay.save 
-            render :show 
+            render :show
         else
             render json: @spots.errors.full_messages, status: 401 
         end
@@ -38,7 +38,7 @@ class Api::StaysController < ApplicationController
 
 
     def stay_params
-        params.require(:stay).permit(:price, :location, :lat, :long, :description)
+        params.require(:stay).permit(:price, :location, :lat, :long, :description, :photo)
     end
 
 end

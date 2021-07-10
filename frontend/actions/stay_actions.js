@@ -31,7 +31,7 @@ export const fetchStays = () => dispatch => (
 
 export const fetchStay = stayId => dispatch => (
     StayApiUtil.fetchStay(stayId)
-    .then(stay => dispatch(receiveStay(stayId)))
+    .then(stay => dispatch(receiveStay(stay)))
 )
 
 export const createStay = stay => dispatch => (
