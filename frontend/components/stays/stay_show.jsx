@@ -14,11 +14,13 @@ componentDidMount(){
 
     render(){
         const {stay} = this.props
-        return(
+        return stay ? (
             <div>
-                <p>SHOW PAGE</p>
+                <p>{stay.price}</p>
+                <p>{stay.lat}</p>
+                <p>{stay.long}</p>
             </div>
-        )
+        ) : null
     }
 
 }
