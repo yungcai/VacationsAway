@@ -7,24 +7,23 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: purple;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 10;
   }
  
   .modal-child {
-    background-color: silver;
-    color:green;
+    height: 275px;
+    width: 180px;
+    background-color: white;
+    color: black;
     font-weight: 700;
+    padding: 50px;
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: 300px;
+    left: 575px;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
   }
  
-  .close-x {
-    background-color: red;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-  }
+
+
