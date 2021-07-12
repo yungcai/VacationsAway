@@ -18,9 +18,9 @@ class StaysIndex extends React.Component{
     render(){
         const {stays, deleteStay} = this.props
         return(
-            <div>
-                <p>INDEX PAGE</p>
-                <ul>
+            <div className='index-container'>
+                <div className='index-header'>STAYS AVAILABLE</div>
+                <div className='index-ul'>
                     {  stays.map((stay, idx)=>(
                         <StaysIndexItem
                         stay={stay}
@@ -29,7 +29,7 @@ class StaysIndex extends React.Component{
                         />
                     ))
                     }
-                </ul>
+                </div>
             </div>
         )
         

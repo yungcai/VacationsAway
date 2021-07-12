@@ -1,25 +1,33 @@
 .login-btn{
     color: white;
     font-weight: 600;
-    background-color: grey;
-    
-
+    background-color: rgba(255, 58, 130, 1);
+    padding: 10px;
+    border-radius:10px;
 }
 
 .signup-btn{
     color: white;
     font-weight: 600;
-    background-color: grey;
+    background-color: rgba(255, 58, 130, 1);
+    padding: 10px;
+    border-radius:10px;
 }
 
 .login-btn:hover {
-    background-color: lightgrey;
+    background-color: rgba(255, 58, 130, 0.59);
 }
 
 .signup-btn:hover{
-    background-color: lightgrey;
+    background-color: rgba(255, 58, 130, 0.59);
 }
 
-.navbar-greeting{
+.greeting-container{
     float:right;
 }
+
+.header-name{
+    font-size: 30px;
+    color:rgba(255, 58, 130, 1)
+}
+

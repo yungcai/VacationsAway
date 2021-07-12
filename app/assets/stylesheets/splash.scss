@@ -1,19 +1,57 @@
+.splash1{
+    display:flex;
+    flex-direction:column;
+    background-color:yellow;
+    height:500px;
+    text-align:center;
+}
+
+.splash2{
+    display:flex;
+    flex-direction:row;
+    background-color:orange;
+    height:300px;
+    text-align:center;
+}
+
+.center-btn{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    margin-top: 250px;
+    text-decoration: none;
+}
 
 
 .splash-header{
-    color: rgba(255,12,162,.8);
+    color: white;
     text-decoration: none;
     font-size:30px;
-
+    background-color:green;
+    background-repeat: no-repeat;
+    width: 50%;
+    position:relative;
 }
 
 .explore-link{
-    color: rgba(255, 23, 153, 0.8);
+    color: white;
     text-decoration: none;
-    font-size:30px
-
+    font-size:30px;
+    background-color:red;
+    background-repeat: no-repeat;
+    width: 50%;
+    // position:relative; 
 }
 
-.splash-img1{
-    background-image: url('home1.jpeg');
+.footer{
+    display:flex;
+    background-color:skyblue;
+    margin-top: 15px;
+    max-height: 200px;
+    align-items: center;
+}
+
+.footer-li{
+    width: 33%;
+    text-align:center;
 }
