@@ -1,5 +1,6 @@
 import React from 'react';
 import SplashContainer from '../splash/splash_container';
+import { Link } from 'react-router-dom';
 
 
 const Greeting = ({ currentUser, logout, openModal }) => {
@@ -11,12 +12,15 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     </nav>
   );
   const personalGreeting = () => (
-    <hgroup className='logged-in-header'>
+    
+    <div className='logged-in-header'>
+      <h1><Link to='/' className='head'>VACATIONS AWAY</Link></h1>
+      <button className="header-button" onClick={logout}>LOG OUT</button>
       <h2 className="header-name">Hi, {currentUser.username}!</h2>
       <p>RESERVATIONS INDEX GOES HERE</p>
       <p>BACK TO INDEX LINK</p>
-      <button className="header-button" onClick={logout}>LOG OUT</button>
-    </hgroup>
+    
+    </div>
   );
 
   return (

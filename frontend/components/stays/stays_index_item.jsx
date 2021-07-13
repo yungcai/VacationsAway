@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 const StaysIndexItem = props => {
   
     return <div className='index-item'>
-        <Link to={`/stays/${props.stay.id}`}>THIS IS A ITEM</Link>
+        <p></p>
+        <Link to={`/stays/${props.stay.id}`}>INDEX ITEM</Link>
         </div>
 
 }

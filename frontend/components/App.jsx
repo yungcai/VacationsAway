@@ -8,18 +8,18 @@ import Modal from "./modal/modal";
 import StaysIndexContainer from "./stays/stays_index_container";
 import StayShowContainer from "./stays/stay_show_container";
 import SplashContainer from "./splash/splash_container";
-import Homepage from "./homepage/homepage";
+
 
 const App = () => (
   <div>
     <Modal/>
     <GreetingContainer/>
      <Switch>
-    <AuthRoute path="/login" component={LoginFormContainer} />
-    <AuthRoute path="/signup" component={SignupFormContainer} />
-    <AuthRoute  exact path='/' component={SplashContainer}/>
+     <AuthRoute  exact path='/' component={SplashContainer}/>
     <Route exact path='/stays' component={StaysIndexContainer}/>
     <Route  exact path='/stays/:stayId' component={StayShowContainer}/>
+    <AuthRoute path="/login" component={LoginFormContainer} />
+    <AuthRoute path="/signup" component={SignupFormContainer} />
     
     </Switch>
     

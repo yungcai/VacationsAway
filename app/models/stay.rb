@@ -1,6 +1,6 @@
 class Stay < ApplicationRecord 
 
-    validates :description, :lat, :long, presence:true 
+    validates :description, :lat, :long, :location, :price, presence:true 
 
     has_many :reviews
 
@@ -9,5 +9,8 @@ class Stay < ApplicationRecord
     foreign_key: :user_id,
     class_name: :User
 
-    has_one_attached :photo
+    has_many :photos,
+    primary_key: :id,
+    foreign_key: :stay_id,
+    class_name: :Photo
 end

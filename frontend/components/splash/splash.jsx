@@ -5,9 +5,9 @@ import GreetingContainer from '../greeting/greeting_container'
 
 const Splash = props => (
    <div>
-        <h1>VACATIONS AWAY</h1>
+        <h1><Link to='/' className='head'>VACATIONS AWAY</Link></h1>
         <div className='splash1'>
-            <div className='center-btn'><Link to={`/stays`}>FIND YOUR STAY AWAY</Link></div>
+            <div><Link to={`/stays`} className='center-btn'>FIND YOUR STAY AWAY</Link></div>
         </div> 
 
         <div className='splash2'>
@@ -16,9 +16,9 @@ const Splash = props => (
         </div>
 
         <footer className='footer'>
-                <p className='footer-li'>about me</p>
-                <p className='footer-li'>about me</p>
-                <p className='footer-li'>about me</p>
+                <p className='footer-li'>ABOUT ME</p>
+                <p className='footer-li'>GITHUB</p>
+                <p className='footer-li'>LINKEDIN</p>
         </footer>
    </div>
 )

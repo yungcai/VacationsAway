@@ -38,7 +38,7 @@ class Api::StaysController < ApplicationController
 
 
     def stay_params
-        params.require(:stay).permit(:price, :location, :lat, :long, :description, :photo)
+        params.require(:stay).permit(:price, :location, :lat, :long, :description)
     end
 
 end

@@ -22,7 +22,7 @@ class StaysIndex extends React.Component{
                 <div className='index-header'>STAYS AVAILABLE</div>
                 <div className='index-ul'>
                     {  stays.map((stay, idx)=>(
-                        <StaysIndexItem
+                       <StaysIndexItem
                         stay={stay}
                         deleteStay={deleteStay}
                         key={idx}

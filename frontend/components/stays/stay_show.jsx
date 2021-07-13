@@ -15,10 +15,11 @@ componentDidMount(){
     render(){
         const {stay} = this.props
         return stay ? (
-            <div>
-                <p>{stay.price}</p>
-                <p>{stay.lat}</p>
-                <p>{stay.long}</p>
+            <div className='stay-index-container'>
+                <h1>STAY DETAILS</h1>
+                <p className='stay-index-item'>{stay.price}</p>
+                <p className='stay-index-item'>{stay.lat}</p>
+                <p className='stay-index-item'>{stay.long}</p>
             </div>
         ) : null
     }
