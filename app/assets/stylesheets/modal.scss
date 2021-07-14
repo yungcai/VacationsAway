@@ -12,18 +12,86 @@
   }
  
   .modal-child {
-    height: 275px;
-    width: 180px;
+    height: 375px;
+    width: 325px;
     background-color: white;
     color: black;
     font-weight: 700;
     padding: 50px;
     position: absolute;
     top: 300px;
-    left: 575px;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
   }
+
+  .welcome{
+    text-align:center;
+    font-family: 'Andale Mono';
+  }
+
+  .formn-container{
+    display:flex;
+  }
+
+  .form-username{
+    font-size: 20px;
+    font-family: 'Andale Mono';
+  }
+
+  .form-email{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Andale Mono';
+    margin-left:15px;
+  }
  
+  .form-password{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Andale Mono';
+  }
+
+  .form-submit{
+    color:white;
+    margin-top: 30px;
+    background-color: rgba(236, 29, 126, 1);
+    margin-left: 15px;
+    padding: 10px;
+    width:300px;
+    border-radius: 8px;
+    border:none;
+  }
+ 
+ 
+  .demo-btn{
+    color:white;
+    margin-top: 30px;
+    background-color: rgba(236, 29, 126, 1);
+    margin-left: 15px;
+    padding: 10px;
+    width:300px;
+    border-radius: 8px;
+    border:none;
+  }
+
+  .email{
+    margin-left:20px;
+    padding:5px;
+    background-color: white;
+    // border-color:black;
+    border:none;
+  }
+
+  .password{
+    padding:5px;
+    background-color: white;
+  }
+  
+  .username{
+    padding:5px;
+    background-color: white;
+  }
 
 
+  

@@ -1,0 +1,1 @@
+json.extract! review, :id, :description, :start_rating, :user_id, :stay_id

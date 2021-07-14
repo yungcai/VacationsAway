@@ -5,4 +5,6 @@ class Photo < ApplicationRecord
     primary_key: :id,
     foreign_key: :stay_id,
     class_name: :Stay
+
+    
 end

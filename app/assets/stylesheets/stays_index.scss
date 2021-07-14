@@ -14,17 +14,38 @@
 
 .index-ul{
     position:absolute;
-    margin-top: 400px;
+    margin-top: 250px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
     margin-left: 10px;
 }
 
 .index-item{
+    display:flex;
     width: 600px;
     height: 100px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     font-size: 25px;
     margin-top: 78px;
     border-top: thick double rgba(0,0,0,.5);
+}
+
+
+.stays-index-img{
+    width:250px;
+    height:150px;
+}
+
+.stay-index-des{
+    margin-left: 140px;
+    margin-top: 55px;
+    // margin-bottom: 35px;
+    font-size: 15px;
+}
+
+.stay-index-price{
+    // margin-left: 120px;
+    // margin-bottom: 35px;
+    font-size: 15px;
+    margin-top: 150px;
 }

@@ -1,10 +1,31 @@
 .stay-index-container{
+    display:flex;
     margin-top: 70px;
 }
 
+
+.stay-show-img{
+    margin-top:150px;
+    margin-left:350px;
+    width:550px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.stay-show-img:hover{
+    width: 850px;
+
+}
+
 .stay-index-item{
-    margin-top: 90px;
+    // margin-top: 90px;
+    border-top:4mm ridge #e0e0eb;
+    margin-top: 50px;
     font-size: 18px;
     color: rgba(0,0,0,.6);
-    margin-left: 500px;
+    margin-left:375px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:18px;
+    font-weight: 700;
+   
 }
+

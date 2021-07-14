@@ -17,9 +17,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
       <h1><Link to='/' className='head'>VACATIONS AWAY</Link></h1>
       <button className="header-button" onClick={logout}>LOG OUT</button>
       <h2 className="header-name">Hi, {currentUser.username}!</h2>
-      <p>RESERVATIONS INDEX GOES HERE</p>
-      <p>BACK TO INDEX LINK</p>
-    
+      <p>YOUR STAYS</p>
     </div>
   );
 

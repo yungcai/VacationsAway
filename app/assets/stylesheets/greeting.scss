@@ -1,25 +1,27 @@
 .login-btn{
-    color: white;
-    font-weight: 600;
-    background-color: rgba(255, 58, 130, 1);
-    padding: 10px;
-    border-radius:10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 100;
+    background-color: rgba(7, 0, 0, 0.03);
+    padding: 12px;
+    border: none;
 }
 
 .signup-btn{
-    color: white;
-    font-weight: 600;
-    background-color: rgba(255, 58, 130, 1);
-    padding: 10px;
-    border-radius:10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 100;
+    background-color: rgba(7, 0, 0, 0.03);
+    padding: 12px;
+    border: none;
 }
 
 .login-btn:hover {
-    background-color: rgba(255, 58, 130, 0.59);
+    background-color: rgba(7, 0, 0, 0.08);
 }
 
 .signup-btn:hover{
-    background-color: rgba(255, 58, 130, 0.59);
+    background-color: rgba(7, 0, 0, 0.08);
 }
 
 .greeting-container{
@@ -34,14 +36,17 @@
 }
 
 .header-button{
-    padding:5px;
-    border-radius: 15px;
-    background-color: rgba(255, 58, 130, 1);
-    margin-left: 85%;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 100;
+    background-color: rgba(7, 0, 0, 0.03);
+    padding: 12px;
+    border: none;
+    margin-left:85%
    
 }
 
 .header-button:hover{
-    background-color: rgba(255, 58, 130, 0.59);
+    background-color: rgba(7, 0, 0, 0.08);
 }
 

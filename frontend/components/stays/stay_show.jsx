@@ -15,12 +15,19 @@ componentDidMount(){
     render(){
         const {stay} = this.props
         return stay ? (
+            
             <div className='stay-index-container'>
-                <h1>STAY DETAILS</h1>
-                <p className='stay-index-item'>{stay.price}</p>
-                <p className='stay-index-item'>{stay.lat}</p>
-                <p className='stay-index-item'>{stay.long}</p>
+                
+        {/* <div><img className='stay-show-img' src={stay.image}/></div> */}
+            
+                <div>
+                <div><img className='stay-show-img' src={stay.image}/></div>
+                <p className='stay-index-item'>PRICE: ${stay.price}</p>
+                <p className='stay-index-item'>{stay.description}</p>
+                <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
+                </div>
             </div>
+    
         ) : null
     }
 
