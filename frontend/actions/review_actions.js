@@ -29,15 +29,15 @@ const removeReview = reviewId => ({
 
 export const fetchReviews = stayId => dispatch => {
   return ReviewAPIUtil.fetchReviews(stayId).then(reviews =>
-    dispatch(receiveAllReviews(reviews))
+    dispatch(receiveReviews(reviews))
   );
 };
 
-// export const fetchReview = (id, stayId) => dispatch => {
-//   return ReviewAPIUtil.fetchReview(id, stayId).then(review =>
-//     dispatch(receiveReview(review))
-//   );
-// };
+export const fetchReview = (reviewId) => dispatch => {
+  return ReviewAPIUtil.fetchReview(reviewId).then(review =>
+    dispatch(receiveReview(review))
+  );
+};
 
 export const createReview = (review) => dispatch => {
   return ReviewAPIUtil.createReview(review).then(

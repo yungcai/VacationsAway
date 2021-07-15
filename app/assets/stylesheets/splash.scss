@@ -1,7 +1,7 @@
 .splash1{
     display:flex;
     flex-direction:column;
-    background-image:url('homelogo.jpeg');
+    background-image: image-url('homelogo.jpeg');
     background-size:100%;
     background-repeat: cover;
     height:500px;
@@ -33,7 +33,7 @@
     color: white;
     text-decoration: none;
     font-size:30px;
-    background-image:url('home1.jpeg');
+    background-image:image-url('home1.jpeg');
     background-size:100%;
   
     width: 50%;
@@ -44,7 +44,7 @@
     color: white;
     text-decoration: none;
     font-size:30px;
-    background-image:url('nyc3.jpeg');
+    background-image:image-url('nyc3.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%,

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
 import { Route } from 'react-router';
 import entitiesReducer from '../../reducers/entities_reducer';
-import ReviewForm from '../reviews/review';
-import ReviewContainer from '../reviews/review_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
+import ReviewForm from '../reviews/review_form';
 
 
 class StayShow extends React.Component{
@@ -28,7 +28,8 @@ render(){
             <p className='stay-index-item'>PRICE: ${stay.price}</p>
             <p className='stay-index-item'>{stay.description}</p>
             <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
-            <ReviewContainer stay={stay}/>
+            <ReviewIndexContainer stay={stay}/>
+            <ReviewForm/>
             </div>
             
         </div>

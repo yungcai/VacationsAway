@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import ReviewForm from './review'
+import ReviewIndex from './review_index'
 import { fetchReviews } from '../../actions/review_actions'
 
 const mSTP = state => {
@@ -11,4 +11,4 @@ const mDTP = dispatch => ({
     fetchReviews: stayId => dispatch(fetchReviews(stayId))
 })
 
-export default connect(mSTP, mDTP)(ReviewForm)
+export default connect(mSTP, mDTP)(ReviewIndex)

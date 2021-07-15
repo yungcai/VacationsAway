@@ -1,10 +1,10 @@
 import { RECEIVE_STAY } from "../actions/stay_actions";
-import { RECEIVE_ALL_REVIEWS, RECEIVE_REVIEW, REMOVE_REVIEW, RECEIVE_REVIEW_USER } from "../actions/review_actions";
+import { RECEIVE_REVIEWS, RECEIVE_REVIEW, REMOVE_REVIEW } from "../actions/review_actions";
 
 const reviewsReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
-      case RECEIVE_ALL_REVIEWS:
+      case RECEIVE_REVIEWS:
         return Object.assign({}, state, action.reviews);
       case RECEIVE_REVIEW:
         return Object.assign({}, state, action.review);
@@ -16,6 +16,6 @@ const reviewsReducer = (state = {}, action) => {
         return state;
     }
   };
-  
+
   
   export default reviewsReducer;

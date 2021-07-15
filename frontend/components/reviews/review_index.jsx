@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class ReviewForm extends React.Component{
+class ReviewIndex extends React.Component{
 
     constructor(props){
         super(props)
@@ -15,14 +15,14 @@ class ReviewForm extends React.Component{
     render(){
          //1 //3
         const {reviews} = this.props;
-        debugger
+      
         const stayReviews = reviews.filter(review=> review.stay_id === this.props.stay.id)
         
         return (
             <div>
                 {
-                    stayReviews.map(review=> (
-                       <p>{review.description}</p>
+                    stayReviews.map((review, idx)=> (
+                       <p key={idx}>{review.description}</p>
                         ))
                 }
             </div>
@@ -30,4 +30,4 @@ class ReviewForm extends React.Component{
     }
 }
 
-export default ReviewForm
+export default ReviewIndex
