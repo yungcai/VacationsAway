@@ -5,6 +5,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 import {receiveCurrentUser} from './actions/session_actions';
 import { fetchStays } from './util/stays_api_util';
+import {fetchReviews} from './actions/review_actions'
 
 /*
 Write an entry point file that renders the `Root` component, with a `store`
@@ -18,8 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     // window.logout = logout;
     // window.signup = signup;
     // const store = configureStore()
-    // window.getState = store.getState;
-    // window.dispatch = store.dispatch;
+   
     // window.receiveCurrentUser = receiveCurrentUser;
     let store;
     if (window.currentUser) {
@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     } else {
       store = configureStore();
     }
+    window.getState = store.getState; 
+    window.dispatch = store.dispatch;
+    window.fetchReviews = fetchReviews
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store}/>, root)
 })

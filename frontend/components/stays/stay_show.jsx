@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { ProtectedRoute } from '../../util/route_util';
 import { Route } from 'react-router';
 import entitiesReducer from '../../reducers/entities_reducer';
+import ReviewForm from '../reviews/review';
+import ReviewContainer from '../reviews/review_container';
+
 
 class StayShow extends React.Component{
 
@@ -12,24 +15,26 @@ componentDidMount(){
 }
 
 
-    render(){
-        const {stay} = this.props
-        return stay ? (
+render(){
+    const {stay} = this.props
+    return stay ? (
+        
+        <div className='stay-index-container'>
             
-            <div className='stay-index-container'>
-                
-        {/* <div><img className='stay-show-img' src={stay.image}/></div> */}
-            
-                <div>
-                <div><img className='stay-show-img' src={stay.image}/></div>
-                <p className='stay-index-item'>PRICE: ${stay.price}</p>
-                <p className='stay-index-item'>{stay.description}</p>
-                <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
-                </div>
+    {/* <div><img className='stay-show-img' src={stay.image}/></div> */}
+        
+            <div>
+            <div><img className='stay-show-img' src={stay.image}/></div>
+            <p className='stay-index-item'>PRICE: ${stay.price}</p>
+            <p className='stay-index-item'>{stay.description}</p>
+            <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
+            <ReviewContainer stay={stay}/>
             </div>
-    
-        ) : null
-    }
+            
+        </div>
+
+    ) : null
+}
 
 }
 
