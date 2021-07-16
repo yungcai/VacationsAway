@@ -30,7 +30,7 @@ class ReviewIndex extends React.Component{
                         <p className='reviews-rating'>RATED {review.star_rating} STARS</p>
                       <p className='reviews-description'>{review.description}</p>
                       <div className='edit-link'><Link className='edit-link2'  to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
-                      <button className='delete-btn'>DELETE</button>
+                      <div className='delete-link'><Link className='delete-link2' >DELETE</Link></div>
                       </div>
                         ))
                 } 

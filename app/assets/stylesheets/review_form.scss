@@ -81,33 +81,46 @@
      text-decoration: none;
      background-color: rgba(0, 0, 0, 0.2);
      border: 1px solid black;
-     width:150px;
+     width:50%;
+    //  width:80px;
      color:black;
      text-align: center;
      font-size: 12px;
      margin: auto;
  }
 
- .delete-btn{
+ .edit-link2{
+    text-decoration: none;
+    color:black;
+}
+
+ .delete-link{
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid black;
-    width:100%;
+    width:50%;
+   //  width:80px;
     color:black;
-    font-size: 11px;
-    margin-top:0;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+}
+
+
+ .delete-link2{
+    text-decoration: none;
+    color:black;
  }
 
  .edit-link:hover{
      background-color: rgba(0, 0, 0, .6);
+     cursor:pointer;
  }
 
- .delete-btn:hover{
+ .delete-link:hover{
     background-color: rgba(0, 0, 0, .6);
     cursor: pointer;
 }
 
-.edit-link2{
-    text-decoration: none;
-    color:black;
-}
+
 
