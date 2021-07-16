@@ -8,6 +8,7 @@ import Modal from "./modal/modal";
 import StaysIndexContainer from "./stays/stays_index_container";
 import StayShowContainer from "./stays/stay_show_container";
 import SplashContainer from "./splash/splash_container";
+import EditFormContainer from "./reviews/edit_form_container";
 
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
     <Route  exact path='/stays/:stayId' component={StayShowContainer}/>
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <Route exact path='/reviews/:reviewId/edit' component={EditFormContainer}/>
     </Switch>
     
   

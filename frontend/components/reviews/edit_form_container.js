@@ -1,20 +1,18 @@
 import {connect} from 'react-redux'
+import EditForm from './edit_form'
+import { updateReview } from '../../actions/review_actions'
 
 
 
 const mSTP = (state, ownProps) => ({
-    review: {
-        description: '',
-        star_rating: ''
-    },
-    stay: ownProps.stay,
-    formType: 'Add Review'
+    review: state.entities.reviews[ownProps.match.params.reviewId],
+    formType: 'Update Review'
 })
 
 const mDTP = dispatch => ({
-    action: review => dispatch(createReview(review))
+    action: review => dispatch(updateReview(review))
 })
 
-export default connect(mSTP, mDTP)(ReviewForm)
+export default connect(mSTP, mDTP)(EditForm)
 
 

@@ -1,9 +1,12 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 class ReviewIndex extends React.Component{
 
     constructor(props){
         super(props)
+        this.state ={
+            editing:false
+        }
     }
 
     componentDidMount(){
@@ -22,16 +25,15 @@ class ReviewIndex extends React.Component{
                  <p className='review-header'>REVIEWS</p>
                  <div>
                 {
-                    
                     stayReviews.map((review, idx)=> (
                         <div key={idx} className='reviews'>
                         <p className='reviews-rating'>RATED {review.star_rating} STARS</p>
                       <p className='reviews-description'>{review.description}</p>
-                      <button>EDIT</button>
+                      <div><Link to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
                       <button>DELETE</button>
                       </div>
                         ))
-                }
+                } 
                 </div>
             </div>
         )
@@ -39,3 +41,5 @@ class ReviewIndex extends React.Component{
 }
 
 export default ReviewIndex
+
+'/reviews/:reviewId/edit'

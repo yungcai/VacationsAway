@@ -25,8 +25,10 @@ class Api::ReviewsController < ApplicationController
 
 
     def update 
+        
         @review = Review.find_by(id:params[:id])
-        if @review && review.update(
+        # debugger
+        if @review && @review.update(
             description: params[:review][:description],
             star_rating: params[:review][:star_rating]
         )
