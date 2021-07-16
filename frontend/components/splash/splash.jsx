@@ -1,10 +1,12 @@
 import React from 'react'
 import { Redirect, Link } from 'react-router-dom'
+import { logout } from '../../util/session_api_util'
 import GreetingContainer from '../greeting/greeting_container'
 
 const Splash = props => (
     <div>
-         <h1><Link to='/' className='head'>VACATIONS AWAY</Link></h1>
+        <div className='logo-left'><img src={window.logo}/></div>
+         {/* <h1><Link to='/' className='head'>VACATIONS AWAY</Link></h1> */}
          <div className='splash1'>
              <div><Link to={`/stays`} className='center-btn'>FIND YOUR STAY AWAY</Link></div>
          </div> 

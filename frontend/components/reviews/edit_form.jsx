@@ -16,9 +16,7 @@ class EditForm extends React.Component{
         this.updateRating = this.updateRating.bind(this)
     }
 
-    componentDidMount(){
-        this.props
-    }
+  
 
     handleSubmit(e){
      

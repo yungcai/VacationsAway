@@ -29,7 +29,7 @@ class ReviewIndex extends React.Component{
                         <div key={idx} className='reviews'>
                         <p className='reviews-rating'>RATED {review.star_rating} STARS</p>
                       <p className='reviews-description'>{review.description}</p>
-                      <div><Link to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
+                      <div ><Link className='edit-link' to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
                       <button>DELETE</button>
                       </div>
                         ))
@@ -42,4 +42,3 @@ class ReviewIndex extends React.Component{
 
 export default ReviewIndex
 
-'/reviews/:reviewId/edit'
