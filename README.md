@@ -1,24 +1,62 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## VACATIONS AWAY
 
-* System dependencies
 
-* Configuration
+Live Site: https://vacationsaway.herokuapp.com/#/
 
-* Database creation
 
-* Database initialization
+### TECHNOLOGIES USED
 
-* How to run the test suite
+Backend
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby on Rails
+* Postgresql
+* AWS (Amazon Web Services). 
 
-* Deployment instructions
+Frontend
 
-* ...
+* Javascript
+* React/Redux
+
+
+API's
+
+* Google Maps API
+
+
+Key Features
+
+* Reviews:
+
+  Logged in users are allowed to edit and create comments on stays (full CRUD functionality).
+  
+  
+
+* Stays
+
+  Stays index and show page rendered dynamically via photo associations with AWS. 
+
+  
+
+
+* User Authentication
+
+  Render validation errors upon standard login, logout, signup functionality.
+  
+  
+  
+##Tasks
+
+* Users will be able to make reservations for a certain stay
+* Search Bar functionality to allow easy filtering by location/price
+  
+
+
+
+
+
+
+
