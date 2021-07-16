@@ -79,7 +79,35 @@
  
  .edit-link{
      text-decoration: none;
-     background-color: rgba(0, 0, 0, 0.04);
+     background-color: rgba(0, 0, 0, 0.2);
      border: 1px solid black;
+     width:150px;
      color:black;
+     text-align: center;
+     font-size: 12px;
+     margin: auto;
  }
+
+ .delete-btn{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    width:100%;
+    color:black;
+    font-size: 11px;
+    margin-top:0;
+ }
+
+ .edit-link:hover{
+     background-color: rgba(0, 0, 0, .6);
+ }
+
+ .delete-btn:hover{
+    background-color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.edit-link2{
+    text-decoration: none;
+    color:black;
+}
+

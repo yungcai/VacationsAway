@@ -75,6 +75,16 @@
     border:none;
   }
 
+  .demo-btn:hover{
+    background-color:rgba(235, 26, 127, 0.67);
+    cursor:pointer;
+  }
+
+  .form-submit:hover{
+    background-color:rgba(235, 26, 127, 0.67);
+    cursor:pointer;
+  }
+
   .email{
     margin-left:20px;
     padding:5px;

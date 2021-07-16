@@ -27,6 +27,19 @@
     border-radius: 10px;
 }
 
+.center-btn:hover{
+    color: rgba(0, 3, 0, 1);
+}
+
+.explore-link:hover{
+    color: rgba(0, 3, 0, 1);
+}
+
+.splash-header:hover{
+    color:rgba(0, 3, 0, 1);
+}
+
+
 
 .splash-header{
     color: white;
@@ -52,13 +65,25 @@
 
 .footer{
     display:flex;
-    background-color:rgba(9, 0, 16, 0.21);
+    background-color:rgba(8, 0, 16, 0.15);
     margin-top: 15px;
-    max-height: 200px;
+    // max-height: 200px;
+    height: 300px;
     align-items: center;
 }
 
-.footer-li{
+.list-1{
+    width: 33%;
+    text-align:center;
+    font-family: 'Bakersville';
+}
+
+.list-2{
+    width: 33%;
+    text-align:center;
+}
+
+.list-3{
     width: 33%;
     text-align:center;
 }

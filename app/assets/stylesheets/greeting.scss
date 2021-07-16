@@ -18,13 +18,16 @@
 
 .login-btn:hover {
     background-color: rgba(7, 0, 0, 0.08);
+    cursor: pointer;
 }
 
 .signup-btn:hover{
     background-color: rgba(7, 0, 0, 0.08);
+    cursor: pointer;
 }
 
 .greeting-container{
+    margin-top: 35px;
     float:right;
 }
 
