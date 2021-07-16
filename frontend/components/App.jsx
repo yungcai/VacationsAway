@@ -15,12 +15,11 @@ const App = () => (
     <Modal/>
     <GreetingContainer/>
      <Switch>
-     <AuthRoute  exact path='/' component={SplashContainer}/>
+     <Route exact path='/' component={SplashContainer}/>
     <Route exact path='/stays' component={StaysIndexContainer}/>
     <Route  exact path='/stays/:stayId' component={StayShowContainer}/>
-    <AuthRoute path="/login" component={LoginFormContainer} />
-    <AuthRoute path="/signup" component={SignupFormContainer} />
-    
+    <AuthRoute exact path="/login" component={LoginFormContainer} />
+    <AuthRoute exact path="/signup" component={SignupFormContainer} />
     </Switch>
     
   

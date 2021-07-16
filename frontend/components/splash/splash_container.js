@@ -4,8 +4,9 @@ import Splash from "./splash";
 import { withRouter } from "react-router-dom";
 
 const mSTP = (state)=> ({
-    stays: Object.values(state.entities.stays)
+    stays: Object.values(state.entities.stays),
     // stay: state.entities.stays[ownProps.match.params.stayId]
+    loggedIn: state.session.id === null ? false : true
 
 })
 

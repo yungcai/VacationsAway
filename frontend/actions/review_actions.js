@@ -33,15 +33,17 @@ export const fetchReviews = stayId => dispatch => {
   );
 };
 
-export const fetchReview = (reviewId) => dispatch => {
-  return ReviewAPIUtil.fetchReview(reviewId).then(review =>
-    dispatch(receiveReview(review))
-  );
-};
+// export const fetchReview = (reviewId) => dispatch => {
+//   return ReviewAPIUtil.fetchReview(reviewId).then(review =>
+//     dispatch(receiveReview(review))
+//   );
+// };
+
+
 
 export const createReview = (review) => dispatch => {
   return ReviewAPIUtil.createReview(review).then(
-    review => dispatch(receiveReviews(review)),
+    review => dispatch(receiveReview(review)),
   );
 };
 

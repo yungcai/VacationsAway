@@ -4,32 +4,43 @@ class ReviewForm extends React.Component{
 
     constructor(props){
         super(props)
-        this.state = this.props.review
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.state = props.review
+        this.state.stay_id = props.stay.id
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.updateRating = this.updateRating.bind(this);
     }
 
     handleSubmit(e){
+     
         e.preventDefault();
-        this.props.action(this.state)
+        this.props.action(this.state);
+
     }
 
-    update(field){
-        return e => this.setState({[field]: e.target.value})
+    handleChange(event) {
+        this.setState({description: event.target.value});
     }
+
+    updateRating(event) {
+        this.setState({star_rating: parseInt(event.target.value)});
+    }
+
 
     render(){
+
         return (
             <div className='review-form-container'>
                 <form onSubmit={this.handleSubmit}>
-                    <label className='rating'>RATING
-                        <input className='rating-input' type='radio' />
+                    <label className='rating'>RATE YOUR STAY
+                        <input className='rating-input' type='number' min='1' max='5' onChange={this.updateRating} />
                     </label>
                     <br/>
-                    <label className='review'>REVIEW
-                        <textarea id='review-input' rows='30' cols='40'/>
+                    <label className='review'>
+                        <textarea id='review-input' rows='20' cols='50'   onChange={this.handleChange}  />
                     </label>
                     <br/>
-                    <input className='submit-btn' type='submit'/>
+                    <input className='submit-btn' type='submit' value='WRITE A REVIEW'/>
                 </form>
             </div>
         );
@@ -37,3 +48,4 @@ class ReviewForm extends React.Component{
 }
 
 export default ReviewForm
+

@@ -9,23 +9,26 @@
     margin-left:350px;
     width:550px;
     box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 13px;
 }
 
 .stay-show-img:hover{
     width: 820px;
+    border-radius: 13px;;
 
 }
 
 .stay-index-item{
     // margin-top: 90px;
-    border-top:4mm ridge #e0e0eb;
+    margin-top: 5px;
+    border-top:1mm solid rgba(4, 13, 1, 0.57);
     margin-top: 50px;
     font-size: 18px;
     color: rgba(0,0,0,.6);
     margin-left:375px;
     font-family: 'Courier New', Courier, monospace;
     font-size:18px;
-    font-weight: 700;
+    font-weight: 550;
    
 }
 

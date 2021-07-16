@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class ReviewIndex extends React.Component{
 
     constructor(props){
@@ -19,12 +18,21 @@ class ReviewIndex extends React.Component{
         const stayReviews = reviews.filter(review=> review.stay_id === this.props.stay.id)
         
         return (
-            <div>
+            <div className='reviews-index-container'>
+                 <p className='review-header'>REVIEWS</p>
+                 <div>
                 {
+                    
                     stayReviews.map((review, idx)=> (
-                       <p key={idx}>{review.description}</p>
+                        <div key={idx} className='reviews'>
+                        <p className='reviews-rating'>RATED {review.star_rating} STARS</p>
+                      <p className='reviews-description'>{review.description}</p>
+                      <button>EDIT</button>
+                      <button>DELETE</button>
+                      </div>
                         ))
                 }
+                </div>
             </div>
         )
     }

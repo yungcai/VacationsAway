@@ -29,6 +29,7 @@ class StaysIndex extends React.Component{
                         />
                     ))
                     }
+            
                 </div>
             </div>
         )

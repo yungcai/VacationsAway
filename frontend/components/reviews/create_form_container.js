@@ -4,11 +4,12 @@ import ReviewForm from './review_form'
 
 
 
-const mSTP = state => ({
+const mSTP = (state, ownProps) => ({
     review: {
         description: '',
         star_rating: ''
     },
+    stay: ownProps.stay,
     formType: 'Add Review'
 })
 

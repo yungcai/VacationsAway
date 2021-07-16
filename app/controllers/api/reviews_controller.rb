@@ -6,22 +6,43 @@ class Api::ReviewsController < ApplicationController
         render :index
     end
 
-    def create 
-        @review = Review.new(review_params)
+    def create
+        # debugger
+        @user = current_user
+        @review = Review.new(stay_id:params[:review][:stay_id], 
+        description:params[:review][:description], 
+        star_rating: params[:review][:star_rating],
+        user_id: current_user.id
+        )
+
         if @review.save
             render :show
         else
-            render json: @review.errors.full_messages, status: 404 
+            render json: @review.errors.full_messages, status: 404
         end
-
     end
 
 
 
     def update 
+        @review = Review.find_by(id:params[:id])
+        if @review && review.update(
+            description: params[:review][:description],
+            star_rating: params[:review][:star_rating]
+        )
+        render :show 
+        else  
+            render json: @review.errors.full_messages, status: 422 
+        end
     end
 
     def destroy 
+        @review = Review.find_by(id:params[:id])
+        if @review && @review.destroy 
+            render :show 
+        else
+            render @review.errors.full_messages, status: 422 
+        end
     end
 
     def review_params 

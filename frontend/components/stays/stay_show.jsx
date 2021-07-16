@@ -4,14 +4,15 @@ import { ProtectedRoute } from '../../util/route_util';
 import { Route } from 'react-router';
 import entitiesReducer from '../../reducers/entities_reducer';
 import ReviewIndexContainer from '../reviews/review_index_container';
-import ReviewForm from '../reviews/review_form';
+import ReviewFormContainer from '../reviews/create_form_container'
 
 
 class StayShow extends React.Component{
 
     
 componentDidMount(){
-    this.props.fetchStay(this.props.match.params.stayId)
+    this.props.fetchStay(this.props.match.params.stayId),
+    this.props.fetchReviews(this.props.match.params.stayId)
 }
 
 
@@ -29,7 +30,7 @@ render(){
             <p className='stay-index-item'>{stay.description}</p>
             <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
             <ReviewIndexContainer stay={stay}/>
-            <ReviewForm/>
+            <ReviewFormContainer stay={stay}/>
             </div>
             
         </div>
