@@ -32,3 +32,5 @@ const App = () => (
 // CHANGED APP to app
 
 export default App;
+
+//remeber to adjust routes
