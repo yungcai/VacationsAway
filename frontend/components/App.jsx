@@ -33,4 +33,4 @@ const App = () => (
 
 export default App;
 
-//remeber to adjust routes
+//remember to adjust routes
