@@ -33,4 +33,4 @@ const App = () => (
 
 export default App;
 
-//remember to adjust routes
+//prepare for github push
