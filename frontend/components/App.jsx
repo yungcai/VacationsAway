@@ -33,5 +33,4 @@ const App = () => (
 
 export default App;
 
-//prepare for github push
-//prepare for refractor
+//prepare for reservations
