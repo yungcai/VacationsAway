@@ -36,19 +36,20 @@ Key Features
 
   Logged in users are allowed to edit and create comments on stays (full CRUD functionality).
   
-  
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.33.59%20PM.png)
 
 * Stays
 
   Stays index and show page rendered dynamically via photo associations with AWS. 
 
-  
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.52%20PM.png)
 
 
 * User Authentication
 
   Render validation errors upon standard login, logout, signup functionality.
   
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
   
   
 ## Tasks
