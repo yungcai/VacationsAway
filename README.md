@@ -2,7 +2,7 @@ README
 
 Welcome to VacationsAway, a clone of the popular rental site AirBnb where users can view stays and write reviews of their stays. It is built on a Ruby on Rails backened with a React/Redux frontend.
 
-
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.31.56%20PM.png)
 
 
 ## VACATIONS AWAY
