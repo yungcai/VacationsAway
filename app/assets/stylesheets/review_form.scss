@@ -1,6 +1,5 @@
 .review-form-container{
     display:flex;
-
 }
 
 #review-input{
@@ -78,6 +77,8 @@
 
  
  .edit-link{
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 700;
      text-decoration: none;
      background-color: rgba(0, 0, 0, 0.2);
      border: 1px solid black;
@@ -107,20 +108,37 @@
 }
 
 
- .delete-link2{
-    text-decoration: none;
-    color:black;
- }
+//  .delete-link2{
+//     text-decoration: none;
+//     color:black;
+//  }
 
  .edit-link:hover{
      background-color: rgba(0, 0, 0, .6);
      cursor:pointer;
  }
 
- .delete-link:hover{
-    background-color: rgba(0, 0, 0, .6);
+//  .delete-link:hover{
+//     background-color: rgba(0, 0, 0, .6);
+//     cursor: pointer;
+// }
+
+.delete-review{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    width:50%;
+   //  width:80px;
+    color:black;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 25%;
     cursor: pointer;
 }
 
 
-
+.delete-review:hover{
+    background-color: rgba(0, 0, 0, .6);
+    cursor:pointer;
+}

@@ -18,36 +18,36 @@ const Splash = props => (
  
          <footer className='footer'>
                 <div className='list-1'>
-                 <p className='footer-li' style ={{fontWeight: 'bold'}}>ABOUT ME</p>
-                 <p className='footer-li'>Diversity and Discrimiation</p>
-                 <p className='footer-li'>Newsroom</p>
-                 <p className='footer-li'>Careers</p>
-                 <p className='footer-li'>AirBnbPlus</p>
-                 <p className='footer-li'>AirBnb Luxe</p>
-                 <p className='footer-li'>HotelTonight</p>
-                 <p className='footer-li'>Responsible Hosting</p>
+                 <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://www.linkedin.com/in/yung-cai-8b8744218/'>LINKEDIN</a></p>
+                 <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
+                 <p className='footer-li'>-Ruby on Rails</p>
+                 <p className='footer-li'>-React/Redux</p>
+                 <p className='footer-li'>-MongoDB</p>
+                 <p className='footer-li'>-Node.js</p>
+                 <p className='footer-li'>-PostgreSQL</p>
+                 <p className='footer-li'>-JQuery</p>
                 </div>
 
                 <div className='list-2'>
-                 <p className='footer-li' style ={{fontWeight: 'bold'}}>LINKEDIN</p>
-                 <p className='footer-li'>Host your home</p>
-                 <p className='footer-li'>Trust your safety</p>
-                 <p className='footer-li'>Gift Cards</p>
-                 <p className='footer-li'>Guest Referrals</p>
-                 <p className='footer-li'>Community Center</p>
-                 <p className='footer-li'>Neighborhood Support</p>
-                 <p className='footer-li'>Cancellation Options</p>
+                <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://github.com/yungcai'>GITHUB</a></p>
+                 <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
+                 <p className='footer-li'>-SQL</p>
+                 <p className='footer-li'>-SQLite3</p>
+                 <p className='footer-li'>-Webpack</p>
+                 <p className='footer-li'>-Git</p>
+                 <p className='footer-li'>-Heroku</p>
+                 <p className='footer-li'>-JQueryLite</p>
                 </div>
 
                 <div className='list-3'>
-                 <p className='footer-li' style ={{fontWeight: 'bold'}}>GITHUB</p>
-                 <p className='footer-li'>Founder's Letter</p>
-                 <p className='footer-li'>Accessibility</p>
-                 <p className='footer-li'>HelpCenter</p>
-                 <p className='footer-li'>Neighborhood Support</p>
-                 <p className='footer-li'>Airbnb Assoiciates</p>
-                 <p className='footer-li'>Made possible by hosts</p>
-                 <p className='footer-li'>COVID-19 response</p>
+                <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://angel.co/u/yung-cai'>ANGELLIST</a></p>
+                 <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
+                 <p className='footer-li'>-Babel</p>
+                 <p className='footer-li'>-Google Maps API</p>
+                 <p className='footer-li'>-Amazon Web Services</p>
+                 <p className='footer-li'>HTML Canvas</p>
+                 <p className='footer-li'> HTML/CSS</p>
+                 <p className='footer-li'>-Express</p>
                 </div>
 
                 
