@@ -27,7 +27,7 @@ class ReviewIndex extends React.Component{
         
         return (
             <div className='reviews-index-container'>
-                 <p className='review-header'>REV</p>
+                 <p className='review-header'>REVIEWS</p>
                  <div>
                 {
                     stayReviews.map((review, idx)=> (
