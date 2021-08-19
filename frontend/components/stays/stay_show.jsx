@@ -5,6 +5,7 @@ import { Route } from 'react-router';
 import entitiesReducer from '../../reducers/entities_reducer';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/create_form_container'
+import StayMap from '../stay_map/stay_map';
 
 
 class StayShow extends React.Component{
@@ -26,11 +27,15 @@ render(){
         
             <div>
             <div><img className='stay-show-img' src={stay.image}/></div>
-            <p className='stay-index-item'>PRICE: ${stay.price}</p>
-            <p className='stay-index-item'>{stay.description}</p>
-            <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
-            <ReviewIndexContainer stay={stay}/>
-            <ReviewFormContainer stay={stay}/>
+                <p className='stay-index-item'>PRICE: ${stay.price}</p>
+                <p className='stay-index-item'>{stay.description}</p>
+                <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
+                <ReviewIndexContainer stay={stay}/>
+                <ReviewFormContainer stay={stay}/>
+            <br/>
+            <div className='show-map'>
+                <StayMap/>
+            </div>
             </div>
             
         </div>
