@@ -33,7 +33,7 @@ class StaysIndex extends React.Component{
             
                 </div>
                 <div className='index-map'>
-                    <StayMap/>
+                    <StayMap stays={this.props.stays} />
                 </div>
             </div>
         )

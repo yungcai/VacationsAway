@@ -34,7 +34,7 @@ render(){
                 <ReviewFormContainer stay={stay}/>
             <br/>
             <div className='show-map'>
-                <StayMap/>
+                <StayMap stay={stay} stays={this.props.stays} />
             </div>
             </div>
             

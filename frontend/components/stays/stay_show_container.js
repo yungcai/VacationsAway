@@ -5,7 +5,8 @@ import StayShow from "./stay_show";
 
 
 const mSTP = (state, ownProps) => ({
-    stay: state.entities.stays[ownProps.match.params.stayId]
+    stay: state.entities.stays[ownProps.match.params.stayId],
+    stays: Object.values(state.entities.stays)
 })
 
 const mDTP = dispatch => ({
