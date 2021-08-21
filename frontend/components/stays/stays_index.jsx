@@ -18,7 +18,9 @@ class StaysIndex extends React.Component{
 
    
     render(){
+    
         const {stays, deleteStay} = this.props
+       
         return(
             <div className='index-container'>
                 <div className='index-header'>STAYS AVAILABLE</div>
@@ -34,7 +36,8 @@ class StaysIndex extends React.Component{
             
                 </div>
                 <div className='index-map'>
-                    <StayMap stays={this.props.stays} updateFilter={this.props.updateFilter}  />
+                    
+                    <StayMap stays={this.props.stays} updateFilter={this.props.updateFilter} />
                 </div>
             </div>
         )

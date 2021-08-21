@@ -20,8 +20,8 @@ class Stay < ApplicationRecord
     def self.in_bounds(bounds)
         self.where("lat < ?", bounds[:northEast][:lat])
           .where("lat > ?", bounds[:southWest][:lat])
-          .where("long > ?", bounds[:southWest][:long])
-          .where("long < ?", bounds[:northEast][:long])
+          .where("lng > ?", bounds[:southWest][:lng])
+          .where("lng < ?", bounds[:northEast][:lng])
     end
 
 
