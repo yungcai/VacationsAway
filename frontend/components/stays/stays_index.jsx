@@ -4,6 +4,7 @@ import StayMap from '../stay_map/stay_map';
 import StaysIndexItem from './stays_index_item';
 import stay_show_container from './stay_show_container';
 
+
 class StaysIndex extends React.Component{
 
   constructor(props){
@@ -33,7 +34,7 @@ class StaysIndex extends React.Component{
             
                 </div>
                 <div className='index-map'>
-                    <StayMap stays={this.props.stays} />
+                    <StayMap stays={this.props.stays} updateFilter={this.props.updateFilter}  />
                 </div>
             </div>
         )

@@ -2,7 +2,9 @@ class Api::StaysController < ApplicationController
     before_action :require_logged_in, only: [:create]
 
     def index 
-        @stays = Stay.all 
+
+        @stays = Stay.all
+
         render :index
 
     end
