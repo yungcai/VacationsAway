@@ -17,13 +17,13 @@ const App = () => (
     <Modal/>
     <GreetingContainer/>
      <Switch>
-     <Route exact path='/' component={SplashContainer}/>
-    <Route exact path='/stays' component={StaysIndexContainer}/>
-    <Route  exact path='/stays/:stayId' component={StayShowContainer}/>
-    <AuthRoute exact path="/login" component={LoginFormContainer} />
-    <AuthRoute exact path="/signup" component={SignupFormContainer} />
-    <Route exact path='/reviews/:reviewId/edit' component={EditFormContainer}/>
-    <Route exact path='/reservations' component={ReservationIndexContainer}/>
+      <Route   path='/stays/:stayId' component={StayShowContainer}/>
+      <Route  path='/stays' component={StaysIndexContainer}/>
+      <AuthRoute  path="/login" component={LoginFormContainer} />
+      <AuthRoute  path="/signup" component={SignupFormContainer} />
+      <Route  path='/reviews/:reviewId/edit' component={EditFormContainer}/>
+      <Route  path='/reservations' component={ReservationIndexContainer}/>
+      <Route path='/' component={SplashContainer}/>
     </Switch>
     
   

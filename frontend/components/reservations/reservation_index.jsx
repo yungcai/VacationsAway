@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { withRouter } from "react-router-dom";
 
 class ReservationIndex extends React.Component{
 
@@ -7,6 +8,8 @@ class ReservationIndex extends React.Component{
         super(props)
     }
 
+    componentDidMount(){
+    }
  
     render(){ 
        
@@ -23,7 +26,7 @@ class ReservationIndex extends React.Component{
                                         <h2>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</h2>
                                     </div>
                                     <div>
-                                        <div><Link to={`/stays`}/>ALL STAYS</div>
+                                        <button onClick={() => this.props.history.push(`stays/${reservation.stay_id}`)}>YOUR STAY</button>
                                         <button onClick={() => this.props.deleteReservation(reservation.id)}>DELETE RESERVATION</button>
                                     </div>
                                 </div>
@@ -38,4 +41,4 @@ class ReservationIndex extends React.Component{
 
 }
 
-export default ReservationIndex
+export default withRouter(ReservationIndex)
