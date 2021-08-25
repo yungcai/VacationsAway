@@ -17,16 +17,18 @@ class ReservationIndex extends React.Component{
     
                     <div >
                         {
-                            this.props.reservations.map((reservation, idx) => (
-                                <div className='reservation-container' key={idx} >
+                            this.props.reservations.map((reservation) => (
+                                <div className='reservation-container' key={reservation.id} >
                                     <div className='reservation-top'>
-                                        <h1>{reservation.description}</h1>
-                                        <h2>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</h2>
+                                        <div className='reservation-description'>{reservation.description}</div>
+                                        <div className='reservation-dates'>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</div>
                                     </div>
+                                    <br></br>
                                     <div className='reservation-bottom'>
-                                        <button onClick={() => this.props.history.push(`stays/${reservation.stay_id}`)}>YOUR STAY</button>
-                                        <button onClick={() => this.props.deleteReservation(reservation.id)}>DELETE RESERVATION</button>
+                                        <button className='stay-btn' onClick={() => this.props.history.push(`stays/${reservation.stay_id}`)}>YOUR STAY</button>
+                                        <button className='delete-reservation-btn' onClick={() => this.props.deleteReservation(reservation.id)}>DELETE RESERVATION</button>
                                     </div>
+                                
                                 </div>
                             ))
                         }

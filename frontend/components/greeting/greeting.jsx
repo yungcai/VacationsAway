@@ -16,7 +16,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     
     <div className='logged-in-header'>
       <button className="header-button" onClick={logout}>LOG OUT</button>
-      <h2 className="header-name">Hi, {currentUser.username}!</h2>
+      <h2 className="header-name">WELCOME {currentUser.username.toUpperCase()}!</h2>
       <p className='your-stays'>YOUR RESERVATIONS</p>
       <ReservationIndexContainer />
     </div>
