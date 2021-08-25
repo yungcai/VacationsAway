@@ -12,23 +12,44 @@
     border-radius: 13px;
 }
 
-.stay-show-img:hover{
-    width: 820px;
-    border-radius: 13px;;
 
+
+.show-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.stay-details{
+    -webkit-box-shadow: 0 -10px 6px -6px #e6e6e6;
+    -moz-box-shadow: 0 10px 6px -6px #e6e6e6;
+         box-shadow: 0 10px 6px -6px #e6e6e6;
+    padding: 15px;
+}
+
+.reservation-form{
+    display: flex;
+    box-shadow: 0 4px 10px #C0C0C0;
+    border-radius: 10px;
+    padding: 60px;
+    margin-left: 200px;
+    border: 1 px solid #e6e6e6;
 }
 
 .stay-index-item{
     // margin-top: 90px;
-    margin-top: 5px;
-    border-top:1mm solid rgba(4, 13, 1, 0.57);
-    margin-top: 50px;
-    font-size: 18px;
-    color: rgba(0,0,0,.6);
-    margin-left:375px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size:18px;
-    font-weight: 550;
+    // margin-top: 5px;
+    // border-top:1mm solid rgba(4, 13, 1, 0.57);
+    // margin-top: 50px;
+    // font-size: 18px;
+    // color: rgba(0,0,0,.6);
+    // margin-left:375px;
+    font-family: 'Montserrat', sans-serif;
+    // font-size:18px;
+    // font-weight: 550;
    
 }
+
+
 

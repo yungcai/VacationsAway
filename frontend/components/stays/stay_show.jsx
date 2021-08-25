@@ -26,18 +26,29 @@ render(){
             
     {/* <div><img className='stay-show-img' src={stay.image}/></div> */}
         
-            <div>
-            <div><img className='stay-show-img' src={stay.image}/></div>
-                <p className='stay-index-item'>PRICE: ${stay.price}</p>
-                <p className='stay-index-item'>{stay.description}</p>
-                <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
-                <ReviewIndexContainer stay={stay}/>
-                <ReviewFormContainer stay={stay}/>
-                <ReservationContainer stay={stay} stayId={stay.id}/>
-            <br/>
-            <div className='show-map'>
+            <div className='show-wrapper'>
+
+                <div className='show-images'>
+                    <img className='stay-show-img' src={stay.image}/>
+                </div>
+
+                <div className='show-middle'>
+                    <div className='stay-details'>
+                        <p className='stay-index-item'>PRICE: ${stay.price}</p>
+                        <p className='stay-index-item'>{stay.description}</p>
+                        <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
+                    </div>
+                    <div className='reservation-form'>
+                    <ReservationContainer stay={stay} stayId={stay.id}/>
+                    </div>
+                </div>
+    
+                    <ReviewIndexContainer stay={stay}/>
+                    <ReviewFormContainer stay={stay}/> 
+                    <br/>
+                <div className='show-map'>
                 <StayMap stay={stay} stays={this.props.stays} />
-            </div>
+                </div>
             </div>
             
         </div>

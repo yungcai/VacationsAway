@@ -49,23 +49,25 @@ class Reservation extends React.Component {
         }
 
         return (
-            <div >
-                <div >
+            <div className='reservation-form'>
+                <div className='reservation-price'>
                     <p >${this.props.stay.price} / night</p>
                 </div>
                 <form onSubmit={this.handleSubmit} >
-                    <div >
+                    <div className='reservation-input'>
                         <input type='date'
                             onChange={this.handleDate('start_date')} 
                             min={new Date().toISOString().split('T')[0]}
+                            className='reservation-start-date'
                         />
                         <input type='date'
                             onChange={this.handleDate('end_date')} 
                             min={new Date().toISOString().split('T')[0]}
+                            className='reservation-end-date'
                         />
                     </div> 
 
-                    <button type='submit'>Reserve</button>
+                    <button className='reserve-btn' type='submit'>Reserve</button>
                 </form>
             </div>
         )
