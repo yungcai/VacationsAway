@@ -1,0 +1,17 @@
+.reservation-container{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: red;
+}
+
+.reservation-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
