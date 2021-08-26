@@ -42,7 +42,7 @@ class StayMap extends React.Component {
       return (
         
         // ...
-        <div id='map-container' ref={ map => this.mapNode = map }> </div>
+        <div className='stay-map' ref={ map => this.mapNode = map }> </div>
       )
     }
   

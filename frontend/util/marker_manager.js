@@ -15,7 +15,7 @@ class MarkerManager {
 
     stays.forEach(stay => {
       if (!this.markers[stay.id]){
-        this.createMarkerFromSpot(stay, this.handleClick);
+        this.createMarkerFromStay(stay, this.handleClick);
       }
     });
 
@@ -27,21 +27,21 @@ class MarkerManager {
 
   }
 
-  createMarkerFromSpot(stay){
-    const position = new google.maps.LatLng(spot.lat, spot.long);
+  createMarkerFromStay(stay){
+    const position = new google.maps.LatLng(stay.lat, stay.long);
     const marker = new google.maps.Marker({
       position,
       map: this.map,
       stayId: stay.id,
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
-        scale: 18,
+        scale: 20,
         fillColor: "white",
         fillOpacity: .8,
         strokeWeight: 0.4
       },
       label: {
-      text: `$${spot.price}`,
+      text: `$${stay.price}`,
       fontWeight: "bold"
       }
         
