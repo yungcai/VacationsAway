@@ -19,12 +19,11 @@ componentDidMount(){
 
 
 render(){
+    
     const {stay} = this.props
     return stay ? (
         
         <div className='stay-index-container'>
-            
-    {/* <div><img className='stay-show-img' src={stay.image}/></div> */}
         
             <div className='show-wrapper'>
 
@@ -43,14 +42,20 @@ render(){
                     </div>
                 </div>
     
-                    <ReviewIndexContainer stay={stay}/>
-                    <ReviewFormContainer stay={stay}/> 
+                <div className='review-wrapper'>
+                    <div>
+                        <ReviewIndexContainer stay={stay}/>
+                    </div>
+                    <div>
+                        <ReviewFormContainer stay={stay}/> 
+                    </div>
+                    
+                </div>
                     <br/>
                 <div className='show-map'>
-                <StayMap stay={stay} stays={this.props.stays} />
+                    <StayMap stay={ this.props.stay} stays={this.props.stays} />
                 </div>
             </div>
-            
         </div>
 
     ) : null

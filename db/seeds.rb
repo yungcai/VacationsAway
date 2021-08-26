@@ -21,14 +21,14 @@ user4 = User.create!(username:'jamessmith', email:'jamesmsmith@gmail.com', passw
 
 
 
-stay1 = Stay.create!(user_id:user1.id, price: 200, location:'Brooklyn, NY', lat:23.432432, long:-33.345424, description:'Beautiful 2BR stay in downtown Brooklyn', amenities: 'Washer, Dryer, Patio, Backyard')
-stay2 = Stay.create!(user_id:user1.id, price: 150, location:'Fresno, CA', lat:25.432476, long:-43.347224, description:'Cozy home in Fresno with full appliances', amenities:'Hot Tub, Washer, Wifi, Patio')
-stay3 = Stay.create!(user_id:user2.id, price: 99, location:'Los Angeles, CA', lat:25.431432, long:-25.342145, description:'Cozy stay in dowtown LA ', amenities:'Balcony, TV, Free Parking, Lake Access' )
-stay4 = Stay.create!(user_id:user2.id, price: 129, location:'Austin, TX', lat:22.411432, long:-23.772324, description:'1BR in city center Austin', amenities:'Backyard, Washer, Wifi, Kitchen' )
-stay5 = Stay.create!(user_id:user3.id, price: 149, location:'San Diego, CA', lat:23.432432, long:-23.342324, description:'1BR close to the beach', amenities:'Pets allowed, Security Camera, Kitchen, Waterfront' )
-stay6 = Stay.create!(user_id:user3.id, price: 120, location:'Queens, NY', lat:23.432432, long:-23.342324, description:'1BR in the heart of Queens', amenities:'Dryer, Luggage Dropoff, Hair Dryer, Air Conditioning ' )
-stay7 = Stay.create!(user_id:user4.id, price: 165, location:'Manhattan, NY', lat:27.662432, long:-27.314524, description:'1BR luxury stay next to CitiField ', amenities:'Wifi, Patio, Hair Dryer, Refrigerator ' )
-stay8 = Stay.create!(user_id:user4.id, price: 185, location:'Malibu, CA', lat:20.345432, long:-23.342324, description:'2BR house near hiking trails', amenities:'Lake Access, Pets allowed, Kitchen, Washer' )
+stay1 = Stay.create!(user_id:user1.id, price: 200, location:'Brooklyn, NY', lat:40.697251, long:-73.985469, description:'Beautiful 2BR stay in downtown Brooklyn', amenities: 'Washer, Dryer, Patio, Backyard')
+stay2 = Stay.create!(user_id:user1.id, price: 150, location:'Manhattan, NY', lat:40.753695, long:-73.986522, description:'Cozy home in Times Square with full appliances', amenities:'Hot Tub, Washer, Wifi, Patio')
+stay3 = Stay.create!(user_id:user2.id, price: 99, location:'Manhattan, NY', lat:40.769653, long:-73.960139, description:'Cozy stay in the Upper East Side with a short walk to the train ', amenities:'Balcony, TV, Free Parking, Lake Access' )
+stay4 = Stay.create!(user_id:user2.id, price: 129, location:'Manhattan, NY', lat:40.759137, long:-73.974360, description:'1BR in city center with easy access to public transportation', amenities:'Backyard, Washer, Wifi, Kitchen' )
+stay5 = Stay.create!(user_id:user3.id, price: 149, location:'Brooklyn, NY', lat:40.702331, long:-73.984325, description:'1BR close with stunning views of the city', amenities:'Pets allowed, Security Camera, Kitchen, Waterfront' )
+stay6 = Stay.create!(user_id:user3.id, price: 120, location:'Brooklyn, NY', lat:40.686243, long: -73.986426, description:'1BR in the heart of Brooklyn', amenities:'Dryer, Luggage Dropoff, Hair Dryer, Air Conditioning ' )
+stay7 = Stay.create!(user_id:user4.id, price: 165, location:'Manhattan, NY', lat:40.749921, long:-73.990408, description:'1BR luxury stay next to Madison Square Garden ', amenities:'Wifi, Patio, Hair Dryer, Refrigerator ' )
+stay8 = Stay.create!(user_id:user4.id, price: 185, location:'Brooklyn, NY', lat:40.687916, long:-73.974144, description:'2BR house near Atlantic avenue with easy walk to Barklays Center', amenities:'Lake Access, Pets allowed, Kitchen, Washer' )
 
 
 stay1.photo.attach(io: URI.open('https://vacationsaway-seeds.s3.amazonaws.com/nyc2.jpeg'), filename:'nyc2.jpeg')

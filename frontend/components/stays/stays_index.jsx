@@ -37,7 +37,7 @@ class StaysIndex extends React.Component{
                 </div>
                 <div className='index-map'>
                     
-                    <StayMap stays={this.props.stays} updateFilter={this.props.updateFilter} />
+                    <StayMap stays={stays} updateFilter={this.props.updateFilter} />
                 </div>
             </div>
         )

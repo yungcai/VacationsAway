@@ -3,84 +3,44 @@ import MarkerManager from '../../util/marker_manager';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router-dom';
 import { updateFilter } from '../../actions/filter_actions';
+import queryString from 'query-string';
 
-const mapOptions = {
-  center: { lat: 37.7758, lng: -122.435 }, // this is SF
-  zoom: 13
-};
 
-const getCoordsObj = latLng => ({
-  lat: latLng.lat(),
-  lng: latLng.lng()
-});
+
 
 class StayMap extends React.Component {
     
   
-    componentDidMount() {
-      // set the map to show SF
-    
-  
-      // wrap this.mapNode in a Google Map
-      this.map = new google.maps.Map(this.mapNode, mapOptions);
-      this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-      if (this.props.singleStay) {
-        this.props.fetchStay(this.props.stayId);
-      } else {
-        this.registerListeners();
-        this.MarkerManager.updateMarkers(this.props.stays)
-      }
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    if (this.props.stay){
+    const { stay } = this.props
+
+    const mapOptions = {
+      center: { lat: stay.lat, lng: stay.long},
+      zoom: 15
+    };
 
 
+    this.map = new google.maps.Map(this.mapNode, mapOptions);
 
-      this.map.addListener("idle", () => {
-        const latlngbounds = this.map.getBounds();
-        const northEast = {
-          lat: latlngbounds.getNorthEast().lat(),
-          lng: latlngbounds.getNorthEast().lng()
-        };
-        const southWest = {
-          lat: latlngbounds.getSouthWest().lat(),
-          lng: latlngbounds.getSouthWest().lng()
-        };
-  
-        const bounds = {
-          northEast, southWest
-        };
-        if (bounds.northEast.lat - bounds.southWest.lat !== 0){
-           this.props.updateFilter("bounds", bounds);
-        }
-      });
 
+    new google.maps.Marker({
+      position: new google.maps.LatLng(stay.lat, stay.long),
+      map: this.map,
+      animation: google.maps.Animation.DROP,
+    })
     }
-
-    componentDidUpdate() {
-      this.MarkerManager.updateMarkers(this.props.stays);
-    }
-
-
-    registerListeners() {
-      google.maps.event.addListener(this.map, 'idle', () => {
-        const { north, south, east, west } = this.map.getBounds().toJSON();
-        const bounds = {
-          northEast: { lat:north, lng: east },
-          southWest: { lat: south, lng: west } };
-        this.props.updateFilter('bounds', bounds);
-      });
-      google.maps.event.addListener(this.map, 'click', (event) => {
-        const coords = getCoordsObj(event.latLng);
-        this.handleClick(coords);
-      });
-    }
-
-    handleMarkerClick(stay) {
-      this.props.history.push(`stays/${stay.id}`);
-    }
-
+  }
 
   
     render() {
+    
       return (
+        
         // ...
         <div id='map-container' ref={ map => this.mapNode = map }> </div>
       )
@@ -89,4 +49,4 @@ class StayMap extends React.Component {
     //...
   }
 
-  export default withRouter(StayMap)
+  export default StayMap
