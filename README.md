@@ -55,7 +55,7 @@ Key Features
 ## Tasks
 
 * Users will be able to make reservations for a certain stay
-* Search Bar functionality to allow easy filtering by location/price
+* Search Bar functionality to allow easy filtering by location
   
 
 

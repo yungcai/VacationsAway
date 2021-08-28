@@ -40,13 +40,11 @@ class StayMap extends React.Component {
     render() {
     
       return (
-        
-        // ...
+  
         <div className='stay-map' ref={ map => this.mapNode = map }> </div>
       )
     }
   
-    //...
   }
 
   export default StayMap

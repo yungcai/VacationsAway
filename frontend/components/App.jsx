@@ -1,5 +1,5 @@
 import React from "react";
-import GreetingContainer from "./greeting/greeting_container";
+import GreetingContainer from "./navbar/greeting_container";
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
 import { Route, Redirect, Switch, Link } from "react-router-dom";
@@ -10,12 +10,13 @@ import StayShowContainer from "./stays/stay_show_container";
 import SplashContainer from "./splash/splash_container";
 import EditFormContainer from "./reviews/edit_form_container";
 import ReservationIndexContainer from "./reservations/reservation_index_container";
+import NavbarContainer from "./navbar/navbar_container";
 
 
 const App = () => (
   <div>
     <Modal/>
-    <GreetingContainer/>
+    <NavbarContainer/>
      <Switch>
       <Route   path='/stays/:stayId' component={StayShowContainer}/>
       <Route  path='/stays' component={StaysIndexContainer}/>
