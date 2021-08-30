@@ -4,6 +4,7 @@
     background-image: image-url('homelogo.jpeg');
     background-size:100%;
     background-repeat: cover;
+    width:100%;
     height:500px;
     text-align:center;
 }
@@ -11,8 +12,9 @@
 .splash2{
     display:flex;
     flex-direction:row;
-    background-color:orange;
+    background-color:gray;
     height:300px;
+    width:100%;
     text-align:center;
 }
 
@@ -115,7 +117,7 @@
 }
 
 .iconify{
-    font-size: 40px;
+    font-size: 34px;
     color:rgba(255, 28, 165, 1);
 }
 

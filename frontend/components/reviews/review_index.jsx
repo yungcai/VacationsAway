@@ -27,15 +27,15 @@ class ReviewIndex extends React.Component{
         
         return (
             <div className='reviews-index-container'>
-                 <p className='review-header'>REVIEWS</p>
-                 <div>
+                 <div><p className='review-header'>REVIEWS</p></div>
+                 <div className='reviews'>
                 {
                     stayReviews.map((review, idx)=> (
-                        <div key={idx} className='reviews'>
-                        <p className='reviews-rating'>RATED {review.star_rating} STARS</p>
-                      <p className='reviews-description'>{review.description}</p>
-                      <div className='edit-link'><Link className='edit-link2'  to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
-                      <DeleteReview review={review} deleteReview={deleteReview} />
+                        <div key={idx} >
+                        <div><p className='reviews-rating'>RATED {review.star_rating} STARS</p></div>
+                        <div><p className='reviews-description'>{review.description}</p></div>
+                        <div className='edit-link'><Link className='edit-link2'  to={`/reviews/${review.id}/edit`}>EDIT</Link></div>
+                        <div><DeleteReview review={review} deleteReview={deleteReview} /></div>
                       </div>
                         ))
                 } 

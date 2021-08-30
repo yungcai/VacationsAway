@@ -56,5 +56,4 @@ const Splash = props => (
  
  export default Splash
 
-
  

@@ -5,30 +5,94 @@
 
 .show-images{
     margin-left: 10%;
+    display: flex;
+    flex-direction: row;
 }
 .stay-show-img{
-    margin-top:5px;
+    // margin-top:5px;
     // margin-left:350px;
     width:550px;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 13px;
+    // box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 13px 0px 0px 13px;
 }
 
+.small-images{
+    margin-left: 7px;
+    display: flex;
+    flex-direction: row;
+    width:550px;
+    // background-color: yellow;
+}
 
+.left-images{
+    display: flex;
+    flex-direction: column;
+    width:275px;
+}
+
+.right-images{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    width:275px;
+}
+
+// .top-left{
+//     background-color: yellow;
+//     height:48%;
+// }
+
+// .top-right{
+//     background-color: yellow;
+//     height:48%;
+//     border-top-right-radius: 13px;
+// }
+
+// .bott-left{
+//     background-color: green;
+//     height:48%;
+//     margin-top: 7px;
+// }
+
+// .bott-right{
+//     background-color: green;
+//     height:48%;
+//     border-bottom-right-radius: 13px;
+//     margin-top: 7px;
+// }
+
+.img-1{
+    // height:48%;
+    width:275px;
+}
+
+.img-2{
+    width:275px;
+}
+
+.img-3{
+    border-top-right-radius: 13px;
+    width:275px;
+}
+
+.img-4{
+    border-bottom-right-radius: 13px;
+    width:275px;
+}
 
 .show-middle{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 70px;
-    margin-left: 10%;
+    // margin-left: 10%;
 }
 
 .stay-details{
     -webkit-box-shadow: 0 -10px 6px -6px #e6e6e6;
     -moz-box-shadow: 0 10px 6px -6px #e6e6e6;
          box-shadow: 0 10px 6px -6px #e6e6e6;
-    padding: 15px;
+    // padding: 15px;
 }
 
 .reservation-form{
@@ -36,7 +100,7 @@
     flex-direction: column;
     box-shadow: 0 4px 10px #C0C0C0;
     border-radius: 10px;
-    margin-left: 200px;
+    // margin-right:1%;
     padding:40px;
   
 }

@@ -37,7 +37,7 @@ class ReviewForm extends React.Component{
                     </label>
                     <br/>
                     <label className='review'>
-                        <textarea id='review-input' rows='20' cols='50'   onChange={this.handleChange}  />
+                        <textarea className='textarea' id='review-input' rows='20' cols='40'   onChange={this.handleChange}  />
                     </label>
                     <br/>
                     <input className='submit-btn' type='submit' value='WRITE A REVIEW'/>

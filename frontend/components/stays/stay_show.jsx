@@ -28,7 +28,19 @@ render(){
             <div className='show-wrapper'>
 
                 <div className='show-images'>
-                    <img className='stay-show-img' src={stay.image}/>
+                    <div>
+                        <img className='stay-show-img' src={stay.image}/>
+                    </div>
+                    <div className='small-images'>
+                        <div className='left-images'>
+                            <div className='top-left'><img className='img-1' src={stay.image}/></div>
+                            <div className='bott-left'><img className='img-2' src={stay.image}/></div>
+                        </div>
+                        <div className='right-images'>
+                            <div className='top-right'><img className='img-3' src={stay.image}/></div>
+                            <div className='bott-right'><img  className='img-4' src={stay.image}/></div> 
+                        </div>
+                    </div>
                 </div>
 
                 <div className='show-middle'>
@@ -46,7 +58,7 @@ render(){
                     <div>
                         <ReviewIndexContainer stay={stay}/>
                     </div>
-                    <div>
+                    <div className='review-form'>
                         <ReviewFormContainer stay={stay}/> 
                     </div>
                     
