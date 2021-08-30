@@ -103,5 +103,19 @@
 }
 
 .nav-right{
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+   
 }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconify{
+    font-size: 40px;
+    color:rgba(255, 28, 165, 1);
+}
+
