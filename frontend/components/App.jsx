@@ -17,22 +17,19 @@ const App = () => (
   <div>
     <Modal/>
     <NavbarContainer/>
-     <Switch>
-      <Route   path='/stays/:stayId' component={StayShowContainer}/>
-      <Route  path='/stays' component={StaysIndexContainer}/>
-      <AuthRoute  path="/login" component={LoginFormContainer} />
-      <AuthRoute  path="/signup" component={SignupFormContainer} />
-      <Route  path='/reviews/:reviewId/edit' component={EditFormContainer}/>
-      <Route  path='/reservations' component={ReservationIndexContainer}/>
-      <Route path='/' component={SplashContainer}/>
+    <Switch>
+        <Route exact path='/stays' component={StaysIndexContainer}/>
+        <Route exact path='/stays/:stayId' component={StayShowContainer}/>
+        <AuthRoute exact path="/login" component={LoginFormContainer} />
+        <AuthRoute exact path="/signup" component={SignupFormContainer} />
+        <Route exact path='/reviews/:reviewId/edit' component={EditFormContainer}/>
+        <ProtectedRoute  exact path='/reservations' component={ReservationIndexContainer}/>
+        <Route exact path='/' component={SplashContainer}/>
     </Switch>
-    
-  
   
   </div>
 );
 
-// CHANGED APP to app
 
 export default App;
 

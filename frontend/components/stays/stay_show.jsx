@@ -7,19 +7,45 @@ import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/create_form_container'
 import StayMap from '../stay_map/stay_map';
 import ReservationContainer from '../reservations/reservation_container';
+import { withRouter } from "react-router-dom";
+
+
+
+
+// const StayShow = ({stay}) => {
+//     return(
+//         <div>{stay.price}</div>
+//     )
+// }
+
 
 
 class StayShow extends React.Component{
 
-    
-componentDidMount(){
-    this.props.fetchStay(this.props.match.params.stayId),
-    this.props.fetchReviews(this.props.match.params.stayId)
-}
+    constructor(props){
+        super(props)
+     
+    }
+
+
+    componentDidMount(){
+    this.props.fetchStay(this.props.match.params.stayId)
+    }
+
+
+    // componentDidUpdate(prevProps){
+        // debugger
+    //     if (this.props.stay === undefined){
+    //         this.props.fetchStay(this.props.stayId)
+    //     }
+    // }
+
+  
+  
 
 
 render(){
-    
+
     const {stay} = this.props
     return stay ? (
         

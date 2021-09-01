@@ -5,10 +5,12 @@ import StayShow from "./stay_show";
 
 
 const mSTP = (state, ownProps) => {
-
+  
     return {
+    stayId: ownProps.match.params.stayId,
     stay: state.entities.stays[ownProps.match.params.stayId],
-    stays: Object.values(state.entities.stays)
+    stays: Object.values(state.entities.stays),
+    reviews: Object.values(state.entities.reviews)
     }
 }
 
