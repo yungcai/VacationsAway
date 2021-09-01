@@ -29,17 +29,12 @@ class StayShow extends React.Component{
 
 
     componentDidMount(){
+       
     this.props.fetchStay(this.props.match.params.stayId)
     }
 
 
-    // componentDidUpdate(prevProps){
-        // debugger
-    //     if (this.props.stay === undefined){
-    //         this.props.fetchStay(this.props.stayId)
-    //     }
-    // }
-
+ 
   
   
 
