@@ -34,9 +34,6 @@ class StayShow extends React.Component{
     }
 
 
- 
-  
-  
 
 
 render(){

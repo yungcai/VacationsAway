@@ -11,13 +11,18 @@ class Api::ReservationsController < ApplicationController
     #   end
     #   render :index
     # end
+
+    def index
+      @reservations = Reservation.all
+      render :index 
+    end
   
-    # def show
-    #     @reservation = Reservation.find(params[:id])
-    #     render :show
-    # end
+    def show
+        @reservation = Reservation.find(params[:id])
+        render :show
+    end
   
-    def create 
+    def create
         @reservation = Reservation.new(reservation_params)
         @reservation.user_id = current_user.id
         if @reservation.save

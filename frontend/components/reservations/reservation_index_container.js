@@ -1,17 +1,18 @@
 import {connect} from 'react-redux';
 import ReservationIndex from './reservation_index';
 import { deleteReservation, fetchReservation, fetchReservations } from '../../actions/reservation_actions';
+import { fetchStays } from '../../actions/stay_actions';
 
 const mSTP = (state) => ({
     reservations: Object.values(state.entities.reservations),
-    currentUser: state.entities.users[state.session.id]
+    user: state.entities.users[state.session.id],
+    stays: state.entities.stays
 })
 
 const mDTP = dispatch => ({
     deleteReservation: (id) => dispatch(deleteReservation(id)),
-    fetchReservations: () => dispatch(fetchReservations()),
-    fetchReservation: (user_id) => dispatch(fetchReservation(user_id)),
+    fetchReservations: (userId) => dispatch(fetchReservations(userId)),
+    fetchStays: () => dispatch(fetchStays())
 })
 
 export default connect(mSTP, mDTP)(ReservationIndex)
-

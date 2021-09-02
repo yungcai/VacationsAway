@@ -3,3 +3,4 @@
         json.partial! '/api/reservations/reservation', reservation 
     end 
 end
+

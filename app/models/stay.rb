@@ -16,6 +16,10 @@ class Stay < ApplicationRecord
     foreign_key: :stay_id,
     class_name: :Stay
 
+    has_many :reservations,
+    primary_key: :id,
+    foreign_key: :stay_id,
+    class_name: :Reservation
 
     def self.in_bounds(bounds)
         self.where("lat < ?", bounds[:northEast][:lat])

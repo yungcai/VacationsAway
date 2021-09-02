@@ -26,7 +26,7 @@ class Reservation extends React.Component {
         if (this.props.currentUser){
             if (this.state.end_date < this.state.start_date) return null
             const reservations = Object.assign({}, this.state, {stay_id: this.props.stayId})
-            this.props.createReservation(reservations).then(this.props.history.push('/reservations')) 
+            this.props.createReservation(reservations).then(this.props.history.push(`/reservations`));
             this.setState(this.newState)
         } else 
         this.props.openModal('login')

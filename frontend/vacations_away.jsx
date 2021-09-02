@@ -13,28 +13,22 @@ Write an entry point file that renders the `Root` component, with a `store`
 prop passed in, inside the div with id 'root'.
 */
 
-
-document.addEventListener('DOMContentLoaded', ()=> {
-    // const storetest = configureStore();
-    // window.login = login;
-    // window.logout = logout;
-    // window.signup = signup;
-    // const store = configureStore()
-   
-    // window.receiveCurrentUser = receiveCurrentUser;
-    let store;
-    if (window.currentUser) {
-      const preloadedState = {
-        session: { id: window.currentUser.id },
-        entities: {
-          users: { [window.currentUser.id]: window.currentUser }
-        }
-      };
+document.addEventListener("DOMContentLoaded", () => {
+  let store;
+  if (window.currentUser) {
+  const {reservations,...currentUser} = window.currentUser; 
+  const preloadedState = {
+      session: { id: window.currentUser.id },
+      entities: {
+          users: { [window.currentUser.id]: currentUser },
+          reservations//: { [window.reservations]: reservations }
+      }
+  };
       store = configureStore(preloadedState);
       delete window.currentUser;
-    } else {
+  } else {
       store = configureStore();
-    }
+  }
     window.getState = store.getState; 
     window.dispatch = store.dispatch;
     window.fetchReviews = fetchReviews

@@ -34,11 +34,12 @@ class MarkerManager {
       map: this.map,
       stayId: stay.id,
       icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 20,
-        fillColor: "white",
+        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+        scale: 10,
+        fillColor: "lightgray",
         fillOpacity: .8,
-        strokeWeight: 0.4
+        strokeWeight: 0.7,
+
       },
       label: {
       text: `$${stay.price}`,
