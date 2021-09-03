@@ -13,8 +13,12 @@ class Api::ReservationsController < ApplicationController
     # end
 
     def index
-      @reservations = Reservation.all
-      render :index 
+      if params[:userId]
+         @reservations = User.find(params[:userId]).reservations
+      else
+        @reservations = Reservation.all
+      end
+      render :index
     end
   
     def show

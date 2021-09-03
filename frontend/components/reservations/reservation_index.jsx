@@ -9,7 +9,10 @@ class ReservationIndex extends React.Component{
     }
 
     componentDidMount(){
+       
         this.props.fetchReservations(this.props.currentUser.id)
+        this.props.fetchStays();
+     
     }
 
     //   componentDidUpdate(prevProps){
@@ -19,9 +22,8 @@ class ReservationIndex extends React.Component{
     //   }
  
     render(){ 
-       
+    //    debugger
         return(
-    
                     <div >
                         {
                             this.props.reservations.map((reservation) => (
@@ -29,6 +31,7 @@ class ReservationIndex extends React.Component{
                                     <div className='reservation-top'>
                                         <div className='reservation-description'>{reservation.description}</div>
                                         <div className='reservation-dates'>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</div>
+                                        <div>{this.props.stays[0].description}</div>
                                     </div>
                                     <br></br>
                                     <div className='reservation-bottom'>

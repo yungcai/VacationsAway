@@ -35,7 +35,7 @@ class MarkerManager {
       stayId: stay.id,
       icon: {
         path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-        scale: 10,
+        scale: 18,
         fillColor: "lightgray",
         fillOpacity: .8,
         strokeWeight: 0.7,
@@ -43,7 +43,9 @@ class MarkerManager {
       },
       label: {
       text: `$${stay.price}`,
-      fontWeight: "bold"
+      fontWeight: "bold",
+      color:"rgba(236, 29, 126, 1)",
+      fontSize:"25px"
       }
         
     });
