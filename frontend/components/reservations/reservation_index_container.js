@@ -5,7 +5,7 @@ import { fetchStays } from '../../actions/stay_actions';
 
 const mSTP = (state) => ({
     reservations: Object.values(state.entities.reservations),
-    user: state.entities.users[state.session.id],
+    currentUser: state.entities.users[state.session.id],
     stays: state.entities.stays
 })
 

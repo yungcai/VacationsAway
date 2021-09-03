@@ -8,10 +8,9 @@ class ReservationIndex extends React.Component{
         super(props)
     }
 
-    // componentDidMount(){
-    //     this.props.fetchReservations(this.props.user.id);
-    //     // this.props.fetchSpots();
-    //   }
+    componentDidMount(){
+        this.props.fetchReservations(this.props.currentUser.id)
+    }
 
     //   componentDidUpdate(prevProps){
     //     if (this.props.reservation.id !== prevProps.reservation.id) {

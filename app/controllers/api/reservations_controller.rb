@@ -18,10 +18,11 @@ class Api::ReservationsController < ApplicationController
     end
   
     def show
-        @reservation = Reservation.find(params[:id])
-        render :show
-    end
-  
+      @reservations = Reservation.all.includes(:user, :stay).where(user_id: params[:id])
+      render :show
+  end
+
+
     def create
         @reservation = Reservation.new(reservation_params)
         @reservation.user_id = current_user.id
@@ -37,18 +38,16 @@ class Api::ReservationsController < ApplicationController
     #     if @reservation
     #         render :show
     #     else
-    #         render json: @booking.errors.full_messages, status: 422
+    #         render json: @reservation.errors.full_messages, status: 422
     #     end
     # end
   
-    def destroy 
+    def destroy
       @reservation = Reservation.find(params[:id])
-      if @reservation.destroy
-        render :show
-      else 
-        render json: @reservation.errors.full_messages, status: 404
-      end
+      @reservation.destroy
+      render json: @reservation
     end
+
   
   
     def reservation_params
