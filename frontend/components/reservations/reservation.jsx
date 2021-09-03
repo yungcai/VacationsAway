@@ -56,16 +56,23 @@ class Reservation extends React.Component {
                 <div>
                     <form onSubmit={this.handleSubmit} >
                         <div className='reservation-input'>
-                            <input type='date'
-                                onChange={this.handleDate('start_date')} 
-                                min={new Date().toISOString().split('T')[0]}
-                                className='reservation-start-date'
-                            />
-                            <input type='date'
-                                onChange={this.handleDate('end_date')} 
-                                min={new Date().toISOString().split('T')[0]}
-                                className='reservation-end-date'
-                            />
+                            <div className='date-input'>
+                                <label>CHECK-IN</label>
+                                <input type='date'
+                                    onChange={this.handleDate('start_date')} 
+                                    min={new Date().toISOString().split('T')[0]}
+                                    className='reservation-start-date'
+                                />
+                            </div>
+                           
+                            <div className='date-input'>
+                                <label >CHECKOUT</label>
+                                <input type='date'
+                                    onChange={this.handleDate('end_date')} 
+                                    min={new Date().toISOString().split('T')[0]}
+                                    className='reservation-end-date'
+                                />
+                            </div>
                         </div> 
 
                         <button className='reserve-btn' type='submit'>Reserve</button>

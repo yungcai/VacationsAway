@@ -29,7 +29,6 @@ class StayShow extends React.Component{
 
 
     componentDidMount(){
-       
     this.props.fetchStay(this.props.match.params.stayId)
     }
 
@@ -42,9 +41,8 @@ render(){
     return stay ? (
         
         <div className='stay-index-container'>
-        
             <div className='show-wrapper'>
-
+            <div className='show-heading'>{stay.description}</div>
                 <div className='show-images'>
                     <div>
                         <img className='stay-show-img' src={stay.image}/>
@@ -63,9 +61,10 @@ render(){
 
                 <div className='show-middle'>
                     <div className='stay-details'>
-                        <p className='stay-index-item'>PRICE: ${stay.price}</p>
+                        <p className='stay-index-item'>{stay.location}</p>
                         <p className='stay-index-item'>{stay.description}</p>
                         <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
+                        <p className='stay-index-item'>PRICE: ${stay.price}</p>
                     </div>
                     <div className='reservation-form'>
                     <ReservationContainer stay={stay} stayId={stay.id}/>

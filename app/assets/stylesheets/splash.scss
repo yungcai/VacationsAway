@@ -102,6 +102,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    -webkit-box-shadow: 0 -10px 6px -6px #e6e6e6;
+    -moz-box-shadow: 0 10px 6px -6px #e6e6e6;
+         box-shadow: 0 10px 6px -6px #e6e6e6;
 }
 
 .nav-right{
