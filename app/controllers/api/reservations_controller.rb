@@ -13,13 +13,13 @@ class Api::ReservationsController < ApplicationController
     # end
 
     def index
-      if params[:userId]
-         @reservations = User.find(params[:userId]).reservations
+      @reservations = if params[:user_id]
+      Reservation.includes(:stay).where(user_id: params[:user_id])
       else
-        @reservations = Reservation.all
+          Reservation.includes(:stay).all
       end
       render :index
-    end
+  end
   
     def show
       @reservations = Reservation.all.includes(:user, :stay).where(user_id: params[:id])

@@ -4,3 +4,4 @@
         json.extract! reservation.stay, :description, :price
     end
 end
+

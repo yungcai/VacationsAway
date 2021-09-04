@@ -1,60 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { withRouter } from 'react-router-dom';
-import MarkerManager from '../../util/marker_manager';
+import React from 'react'
 
+export default class Map extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    
+    componentDidMount(){
+        console.log(this.props)
+        const options = {
+            center:{lat: +this.props.lat || 40.622090 , lng: +this.props.long || -74.027770},
+            zoom: 13,
+            disableDefaultUI: true,
+            mapTypeId: 'terrain',
+        }
+        this.map = new google.maps.Map(this.mapNode, options)
 
+        this.map.addListener('idle', () => {
+            
+        })
+    }
 
-class IndexMap extends React.Component {
-
-  componentDidMount() {
-    const mapOptions = {
-      center: { lat: 40.714996, lng: -73.963132 },
-      zoom: 13
-    };
-
-    this.map = new google.maps.Map(this.mapNode, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-    this.MarkerManager.updateMarkers(this.props.stays);
-
-    this.map.addListener("idle", () => {
-      const latlngbounds = this.map.getBounds();
-      const northEast = {
-        lat: latlngbounds.getNorthEast().lat(),
-        lng: latlngbounds.getNorthEast().lng()
-      };
-      const southWest = {
-        lat: latlngbounds.getSouthWest().lat(),
-        lng: latlngbounds.getSouthWest().lng()
-      };
-
-      const bounds = {
-        northEast, southWest
-      };
-      if (bounds.northEast.lat - bounds.southWest.lat !== 0){
-         this.props.updateFilter("bounds", bounds);
-      }
-    });
-  }
- 
-
-  componentDidUpdate() {
-    this.MarkerManager.updateMarkers(this.props.stays);
-  }
-
-
-  handleMarkerClick(stay) {
-    this.props.history.push(`stays/${stay.id}`);
-  }
-
-
-  render() {
-    return (
-      <div id="map-container" ref={map => this.mapNode = map}>
-        Map
-      </div>
-    );
-  }
+    
+    render(){
+        let marker;
+        this.props.stays.forEach((stay) => {
+            marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location.lat, location.long),
+            map: this.map,
+            animation:google.maps.Animation.Drop
+            });
+        })
+        
+        return (
+            <div ref={ map => this.mapNode = map }></div>
+        )
+    }
 }
-
-export default withRouter(IndexMap);

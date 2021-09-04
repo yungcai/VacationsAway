@@ -13,7 +13,7 @@ class DeleteReview extends React.Component{
     }
 
     render(){
-
+        
         return(
             <div>
                 <button className='delete-review' onClick={this.handleSubmit}>DELETE</button>

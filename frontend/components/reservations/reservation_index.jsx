@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { withRouter } from "react-router-dom";
 
+
 class ReservationIndex extends React.Component{
 
-    constructor(props) {
+    constructor(props){
         super(props)
     }
 
@@ -22,7 +23,7 @@ class ReservationIndex extends React.Component{
     //   }
  
     render(){ 
-    //    debugger
+      
         return(
                     <div >
                         {
@@ -31,7 +32,7 @@ class ReservationIndex extends React.Component{
                                     <div className='reservation-top'>
                                         <div className='reservation-description'>{reservation.description}</div>
                                         <div className='reservation-dates'>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</div>
-                                        <div>{this.props.stays[0].description}</div>
+                                        <div>IMAGE</div>
                                     </div>
                                     <br></br>
                                     <div className='reservation-bottom'>
