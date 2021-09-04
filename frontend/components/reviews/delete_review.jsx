@@ -14,11 +14,19 @@ class DeleteReview extends React.Component{
 
     render(){
         
+    //    debugger 
         return(
-            <div>
-                <button className='delete-review' onClick={this.handleSubmit}>DELETE</button>
+            <div >
+               
+                {this.props.user_id === this.props.review.user_id? 
+                    <div>
+                    <button className='delete-review' onClick={this.handleSubmit}>DELETE</button>
+                    </div>
+                :
+                    null
+        }
             </div>
-        )
+        ) 
     }
 
 }
