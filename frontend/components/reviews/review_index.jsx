@@ -29,10 +29,10 @@ class ReviewIndex extends React.Component{
         return (
             <div className='reviews-index-container'>
                  <div><p className='review-header'>REVIEWS</p></div>
-                 <div className='reviews'>
+                 <div className='reviews-wrapper'>
                 {
                     stayReviews.map((review, idx)=> (
-                        <div key={idx} >
+                        <div className='reviews' key={idx} >
                         <div><p className='reviews-rating'>RATED {review.star_rating} STARS</p></div>
                         <div><p className='reviews-description'>{review.description}</p></div>
                         <div><EditReview user_id={this.props.userId} review={review}/></div>
