@@ -3,7 +3,7 @@ import MarkerManager from '../../util/marker_manager';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router-dom';
 import { updateFilter } from '../../actions/filter_actions';
-import queryString from 'query-string';
+
 
 
 
