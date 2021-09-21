@@ -15,7 +15,7 @@ class IndexMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-    this.MarkerManager.updateMarkers(this.props.stays);
+    
 
     this.map.addListener("idle", () => {
       const latlngbounds = this.map.getBounds();
@@ -35,6 +35,8 @@ class IndexMap extends React.Component {
          this.props.updateFilter("bounds", bounds);
       }
     });
+
+    this.MarkerManager.updateMarkers(this.props.stays);
   }
  
 
