@@ -28,11 +28,12 @@
   .welcome{
     text-align:center;
     font-family: 'Andale Mono';
+    
   }
 
-  .formn-container{
-    display:flex;
-  }
+  // .form-container{
+  //   display:flex;
+  // }
 
   .form-username{
     font-size: 20px;
@@ -90,17 +91,19 @@
     padding:5px;
     background-color: white;
     // border-color:black;
-    border:none;
+    border:2px solid black;
   }
 
   .password{
     padding:5px;
     background-color: white;
+    border:2px solid black;
   }
   
   .username{
     padding:5px;
     background-color: white;
+    border:2px solid black;
   }
 
 
