@@ -31,13 +31,11 @@ API's
 
 ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.33.59%20PM.png)
 
+* Code Snippets
+
+
+
 Key Features
-
-* Reviews:
-
-  Logged in users are allowed to edit and create comments on stays (full CRUD functionality).
-  
-  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.33.59%20PM.png)
 
 * Stays
 
@@ -46,11 +44,26 @@ Key Features
   ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.52%20PM.png)
 
 
+* Reservations:
+
+  Users are able to reserve stays and view the list of stays they have booked and stayed.
+  
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.33.31%20PM.png)
+
+
+* Reviews:
+
+  Logged in users are allowed to edit and create comments on stays (full CRUD functionality).
+  
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.36.28%20PM.png)
+
+
+
 * User Authentication
 
   Render validation errors upon standard login, logout, signup functionality.
   
-  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.32.18%20PM.png)
   
   
 
