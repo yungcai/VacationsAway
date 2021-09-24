@@ -51,7 +51,7 @@ class Reservation extends React.Component {
         return (
             <div className='reservation-wrapper'>
                 <div className='reservation-price'>
-                    <p >${this.props.stay.price} / night</p>
+                    <p >${parseFloat(this.props.stay.price).toFixed(2)} / night</p>
                 </div>
                 <div>
                     <form onSubmit={this.handleSubmit} >

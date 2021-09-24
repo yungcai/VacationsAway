@@ -64,7 +64,7 @@ render(){
                         <p className='stay-index-item'>{stay.location}</p>
                         <p className='stay-index-item'>{stay.description}</p>
                         <p className='stay-index-item'>AMENITIES: {stay.amenities}</p>
-                        <p className='stay-index-item'>PRICE: ${stay.price}</p>
+                        <p className='stay-index-item'>PRICE: ${parseFloat(stay.price).toFixed(2)}</p>
                     </div>
                     <div className='reservation-form'>
                     <ReservationContainer stay={stay} stayId={stay.id}/>
