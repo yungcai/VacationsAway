@@ -29,6 +29,7 @@ API's
 
 * Google Maps API
 
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.33.59%20PM.png)
 
 Key Features
 
@@ -52,11 +53,7 @@ Key Features
   ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
   
   
-## Tasks
 
-* Users will be able to make reservations for a certain stay
-* Search Bar functionality to allow easy filtering by location
-  
 
 
 
