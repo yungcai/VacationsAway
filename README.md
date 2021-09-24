@@ -29,9 +29,8 @@ API's
 
 * Google Maps API
 
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.33.59%20PM.png)
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.35.01%20PM.png)
 
-* Code Snippets
 
 
 
@@ -63,7 +62,7 @@ Key Features
 
   Render validation errors upon standard login, logout, signup functionality.
   
-  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.32.18%20PM.png)
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
   
   
 
