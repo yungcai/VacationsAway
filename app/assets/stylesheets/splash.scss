@@ -68,6 +68,7 @@
 
 .footer{
     display:flex;
+    // font-family: 'Cambria';
     background-color:rgba(8, 0, 16, 0.15);
     margin-top: 15px;
     // max-height: 200px;
@@ -126,3 +127,6 @@
     color:rgba(255, 28, 165, 1);
 }
 
+.footer-li{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

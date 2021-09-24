@@ -17,8 +17,8 @@ const Splash = props => (
  
          <footer className='footer'>
                 <div className='list-1'>
-                 <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://www.linkedin.com/in/yung-cai-8b8744218/'>LINKEDIN</a></p>
-                 <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
+                 <p className='footer-li' style ={{fontWeight: 'bold'}}><a href='https://www.linkedin.com/in/yung-cai-8b8744218/' target='_blank'><span className="iconify" data-icon="akar-icons:linkedin-fill" ></span></a></p>
+                 <p className='footer-li' >SKILLS AND TECHNOLOGIES</p>
                  <p className='footer-li'>-Ruby on Rails</p>
                  <p className='footer-li'>-React/Redux</p>
                  <p className='footer-li'>-MongoDB</p>
@@ -28,7 +28,7 @@ const Splash = props => (
                 </div>
 
                 <div className='list-2'>
-                <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://github.com/yungcai'>GITHUB</a></p>
+                <p className='footer-li' style ={{fontWeight: 'bold'}}><a href='https://github.com/yungcai' target='_blank'><span className="iconify" data-icon="akar-icons:github-fill"  ></span></a></p>
                  <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
                  <p className='footer-li'>-SQL</p>
                  <p className='footer-li'>-SQLite3</p>
@@ -39,7 +39,7 @@ const Splash = props => (
                 </div>
 
                 <div className='list-3'>
-                <p className='footer-li' style ={{fontWeight: 'bold'}}><a style={{textDecoration:'none'}} href='https://angel.co/u/yung-cai'>ANGELLIST</a></p>
+                <p className='footer-li' style ={{color: 'black'}}><a href='https://angel.co/u/yung-cai' target='_blank'><span className="iconify" data-icon="cib:angellist"></span></a></p>
                  <p className='footer-li'>SKILLS AND TECHNOLOGIES</p>
                  <p className='footer-li'>-Babel</p>
                  <p className='footer-li'>-Google Maps API</p>
