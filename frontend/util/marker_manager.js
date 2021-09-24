@@ -34,19 +34,19 @@ class MarkerManager {
       map: this.map,
       stayId: stay.id,
       icon: {
-        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+        path: google.maps.SymbolPath.SQUARE,
         scale: 14,
         fillColor: "lightgray",
         fillOpacity: .9,
         strokeWeight: 0.7,
 
       },
-      label: {
-      text: `$${stay.price}`,
-      fontWeight: "bold",
-      color:"rgba(236, 29, 126, 1)",
-      fontSize:"19px"
-      }
+      // label: {
+      // text: `$${stay.price}`,
+      // fontWeight: "bold",
+      // color:"rgba(236, 29, 126, 1)",
+      // fontSize:"19px"
+      // }
         
     });
     marker.addListener('click', () => this.handleClick(stay));

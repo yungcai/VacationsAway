@@ -17,7 +17,7 @@ class EditReview extends React.Component{
                
                 {this.props.user_id === this.props.review.user_id? 
                     <div>
-                   <div className='edit-link'><Link className='edit-link2'  to={`/reviews/${this.props.review.id}/edit`}>EDIT</Link></div>
+                   <button className='edit-link'><Link className='edit-link2'  to={`/reviews/${this.props.review.id}/edit`}><span class="iconify" data-icon="jam:write"></span></Link></button>
                     </div>
                 :
                     null

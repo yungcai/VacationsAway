@@ -32,7 +32,7 @@ class ReservationIndex extends React.Component{
                                     <div className='reservation-top'>
                                         <div className='reservation-description'>{reservation.description}</div>
                                         <div className='reservation-dates'>Reservation dates: {reservation.start_date.split('T')[0]} to {reservation.end_date.split('T')[0]}</div>
-                                        <div>IMAGE</div>
+                                        
                                     </div>
                                     <br></br>
                                     <div className='reservation-bottom'>

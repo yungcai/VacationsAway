@@ -20,7 +20,7 @@ class DeleteReview extends React.Component{
                
                 {this.props.user_id === this.props.review.user_id? 
                     <div>
-                    <button className='delete-review' onClick={this.handleSubmit}>DELETE</button>
+                    <button className='delete-review' onClick={this.handleSubmit}><span class="iconify" data-icon="fluent:delete-28-regular"></span></button>
                     </div>
                 :
                     null

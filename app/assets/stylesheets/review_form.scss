@@ -91,12 +91,12 @@
      text-decoration: none;
      background-color: rgba(0, 0, 0, 0.2);
      border: 1px solid black;
-     width:50%;
+     width:36px;
     //  width:80px;
-     color:black;
-     text-align: center;
-     font-size: 12px;
-     margin: auto;
+    //  color:black;
+    //  text-align: center;
+    //  font-size: 12px;
+    //  margin: auto;
      border-radius: 3px;
  }
 
@@ -138,12 +138,13 @@
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid black;
-    width:50%;
+    width:36px;
+ 
    //  width:80px;
-    color:black;
-    text-align: center;
-    font-size: 12px;
-    margin-left: 25%;
+    // color:black;
+    // text-align: center;
+    // font-size: 12px;
+    // margin-left: 25%;
     cursor: pointer;
     border-radius: 3px;
 }
@@ -152,4 +153,17 @@
 .delete-review:hover{
     background-color: rgba(0, 0, 0, .6);
     cursor:pointer;
+}
+
+
+.reviews-wrapper{
+    .iconify{
+        font-size: 24px;
+        color:rgba(8, 0, 16, 0.48);
+    }
+}
+
+.edit-delete{
+    display: flex;
+    flex-direction: row;
 }
