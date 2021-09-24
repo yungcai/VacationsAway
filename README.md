@@ -2,7 +2,7 @@ README
 
 Welcome to VacationsAway, a clone of the popular rental site AirBnb where users can view stays and write reviews of their stays. It is built on a Ruby on Rails backened with a React/Redux frontend.
 
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.31.56%20PM.png)
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-23%20at%206.02.16%20PM.png)
 
 
 ## VACATIONS AWAY
@@ -63,7 +63,16 @@ Key Features
   Render validation errors upon standard login, logout, signup functionality.
   
   ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
+
+* Code snippets
+
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.43.08%20PM.png)
+
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.45.37%20PM.png)
+
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.44.29%20PM.png)
   
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.44.29%20PM.png)
   
 
 
