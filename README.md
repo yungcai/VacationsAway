@@ -31,7 +31,7 @@ API's
 
 ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.35.01%20PM.png)
 
-
+![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.43.08%20PM.png)
 
 
 Key Features
@@ -49,12 +49,15 @@ Key Features
   
   ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.33.31%20PM.png)
 
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.43.36%20PM.png)
+
 
 * Reviews:
 
   Logged in users are allowed to edit and create comments on stays (full CRUD functionality).
+
   
-  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.36.28%20PM.png)
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%203.58.23%20PM.png)
 
 
 
@@ -64,16 +67,12 @@ Key Features
   
   ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-08-10%20at%205.32.08%20PM.png)
 
-* Code snippets
-
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.43.08%20PM.png)
-
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.45.37%20PM.png)
-
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.44.29%20PM.png)
+  ![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.44.29%20PM.png)
   
-![VacationsAway](https://github.com/yungcai/VacationsAway/blob/main/app/assets/images/Screen%20Shot%202021-09-24%20at%201.44.29%20PM.png)
-  
+
+
+
+
 
 
 
