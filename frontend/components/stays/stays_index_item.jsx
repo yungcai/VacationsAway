@@ -8,7 +8,7 @@ const StaysIndexItem = props => {
         
         <Link to={`/stays/${props.stay.id}`}><img className='stays-index-img' src={props.stay.image}/></Link>
        <div className='stay-index-des'>{props.stay.description}</div>
-       <div className='stay-index-price'>${props.stay.price}/night</div>
+       <div className='stay-index-price'>${parseFloat(props.stay.price).toFixed(2)}/night</div>
     </div>
 
 }
