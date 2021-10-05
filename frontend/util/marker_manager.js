@@ -46,7 +46,7 @@ class MarkerManager {
       // fontWeight: "bold",
       // color:"rgba(236, 29, 126, 1)",
       // fontSize:"19px"
-      // }
+      // }  
         
     });
     marker.addListener('click', () => this.handleClick(stay));
